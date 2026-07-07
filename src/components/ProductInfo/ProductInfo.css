@@ -1,0 +1,905 @@
+.product-info {
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+
+    direction: rtl;
+}
+
+.product-info-breadcrumb-mini {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+
+    color: #1672dd;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.product-info-breadcrumb {
+    color: #81858b;
+}
+
+.product-info-title {
+    margin: 12px 0 8px;
+
+    color: #23254e;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 2;
+}
+
+.product-info-english {
+    color: #c0c2c5;
+    font-size: 13px;
+    text-align: right;
+}
+
+.product-info-divider {
+    width: 100%;
+    height: 1px;
+
+    margin: 14px 0 18px;
+
+    background-color: #e0e0e2;
+}
+
+.product-info-meta-row {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.product-info-rating-box {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+
+    color: #3f4064;
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.product-info-rating-box svg {
+    color: #f9bc00;
+    font-size: 16px;
+}
+
+.product-info-meta-light {
+    color: #c0c2c5;
+    font-weight: 400;
+}
+
+.product-info-chip {
+    height: 32px;
+
+    display: flex;
+    align-items: center;
+    gap: 5px;
+
+    padding: 0 12px;
+
+    border: none;
+    border-radius: 16px;
+    background-color: #f0f0f1;
+
+    color: #3f4064;
+    font-family: inherit;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.product-info-chip svg {
+    font-size: 14px;
+    flex-shrink: 0;
+}
+
+.product-info-chip-purple {
+    background-color: #f1efff;
+    color: #6f4ef2;
+}
+
+.product-info-chip-purple svg {
+    color: #7b61ff;
+}
+
+.product-info-color-section {
+    margin-top: 22px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.product-info-color-title {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    color: #3f4064;
+    font-size: 16px;
+}
+
+.product-info-color-title span {
+    font-weight: 700;
+}
+
+.product-info-color-title strong {
+    font-weight: 700;
+}
+
+.product-info-color {
+    width: 16px;
+    height: 16px;
+
+    display: block;
+
+    border-radius: 9999px;
+}
+
+.product-info-colors {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+.product-info-color-btn {
+    width: 48px;
+    height: 48px;
+
+    position: relative;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border: 1px solid #e0e0e2;
+    background-color: #ffffff;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.product-info-color-circle {
+    width: 32px;
+    height: 32px;
+    padding: 5px;
+
+    border-radius: 50%;
+    border: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.product-info-color-check {
+    position: absolute;
+    right: 50%;
+    top: 55%;
+
+    transform: translate(50%, -50%);
+
+    color: #2b2b2b;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.product-info-delivery-box {
+    height: 68px;
+
+    margin-top: 22px;
+    padding: 0 20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 12px;
+
+    border-radius: 8px;
+    border-right: 4px solid #2b49ff;
+    background-color: #eef1ff;
+
+    color: #2f3b80;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.product-info-delivery-image {
+    width: 34px;
+    height: 34px;
+
+    object-fit: contain;
+    display: block;
+
+    flex-shrink: 0;
+}
+
+.product-info-delivery-image-placeholder {
+    width: 34px;
+    height: 34px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border: 1px dashed #9aa4ff;
+    border-radius: 8px;
+
+    color: #2b49ff;
+    font-size: 11px;
+
+    flex-shrink: 0;
+}
+
+.product-info-section {
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.product-info-section-title {
+    margin-top: 28px;
+    margin-bottom: 14px;
+
+    color: #000;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.product-info-insurance-box {
+    min-height: 78px;
+
+    display: flex;
+    align-items: stretch;
+
+    border: 1px solid #e0e0e2;
+    border-radius: 8px;
+    overflow: hidden;
+
+    background-color: #fff;
+}
+
+.product-info-insurance-right {
+    width: 72px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-left: 1px solid #e0e0e2;
+}
+
+.product-info-insurance-checkbox {
+    width: 20px;
+    height: 20px;
+
+    border: 2px solid #6f6f6f;
+    border-radius: 4px;
+}
+
+.product-info-insurance-center {
+    flex: 1;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 8px;
+
+    padding: 14px 18px;
+}
+
+.product-info-insurance-title {
+    color: #3f4064;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.product-info-insurance-price-row {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+
+.product-info-insurance-discount {
+    min-width: 34px;
+    height: 20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 0 6px;
+
+    border-radius: 12px;
+    background-color: #ef4056;
+
+    color: #fff;
+    font-size: 11px;
+    font-weight: 700;
+}
+
+.product-info-insurance-old-price {
+    color: #c0c2c5;
+    font-size: 12px;
+    text-decoration: line-through;
+}
+
+.product-info-insurance-price {
+    color: #3f4064;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.product-info-insurance-left {
+    width: 132px;
+
+    display: flex;
+    align-items: end;
+    justify-content: end;
+
+    padding: 15px;
+}
+
+.product-info-insurance-left button {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+
+    border: none;
+    background: transparent;
+
+    color: #1672dd;
+    font-family: inherit;
+    font-size: 13px;
+    cursor: pointer;
+}
+
+.product-info-features-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.product-info-feature-card {
+    width: calc((100% - 20px) / 3);
+    min-height: 82px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 8px;
+
+    padding: 14px;
+
+    border-radius: 8px;
+    background-color: #f0f0f1;
+}
+
+.product-info-feature-label {
+    color: #81858b;
+    font-size: 13px;
+}
+
+.product-info-feature-value {
+    color: #3f4064;
+    font-size: 17px;
+    font-weight: 700;
+}
+
+.product-info-all-features-row {
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+
+    margin: 18px 0;
+}
+
+.product-info-all-features-line {
+    height: 1px;
+
+    flex: 1;
+
+    background-color: #e0e0e2;
+}
+
+.product-info-all-features-btn {
+    min-width: 190px;
+    height: 42px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+
+    flex-shrink: 0;
+
+    border: 1px solid #d0d0d0;
+    border-radius: 10px;
+    background-color: #ffffff;
+
+    color: #000;
+    font-family: inherit;
+    font-size: 15px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.product-info-return-row {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+
+    color: #81858b;
+    font-size: 14px;
+    line-height: 2.1;
+}
+
+.product-info-return-row svg {
+    flex-shrink: 0;
+    margin-top: 5px;
+}
+
+.product-info-return-row p {
+    margin: 0;
+}
+
+.product-info-plus-box {
+    margin-top: 20px;
+
+    display: flex;
+    align-items: stretch;
+
+    border: 1px solid #e0e0e2;
+    border-radius: 10px;
+    overflow: hidden;
+
+    background-color: #fff;
+}
+
+.product-info-plus-content {
+    flex: 1;
+
+    padding: 20px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.product-info-plus-content h3 {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    direction: rtl;
+    margin-right: -7px;
+
+    color: #c337a7;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.product-info-plus-content ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+
+    color: #81858b;
+    font-size: 14px;
+}
+
+.product-info-plus-content li {
+    position: relative;
+    padding-right: 12px;
+}
+
+.product-info-plus-content li::before {
+    content: "";
+
+    width: 5px;
+    height: 5px;
+
+    position: absolute;
+    right: 0;
+    top: 10px;
+
+    border-radius: 50%;
+    background-color: #c337a7;
+}
+
+.product-info-link-btn {
+    margin-top: 18px;
+
+    display: flex;
+    align-items: center;
+    gap: 4px;
+
+    border: none;
+    background: transparent;
+
+    color: #2b7fff;
+    font-family: inherit;
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.product-info-plus-image-placeholder {
+    width: 103px;
+    min-height: 60px;
+
+    display: flex;
+    align-items: end;
+    justify-content: end;
+}
+
+.product-info-installment-box {
+    margin-top: 14px;
+    margin-bottom: 8px;
+
+    padding: 18px 20px;
+
+    border: 1px solid #e0e0e2;
+    border-radius: 10px;
+    background-color: #fff;
+}
+
+.product-info-installment-header {
+    display: flex;
+    gap: 10px;
+
+    color: #3f4064;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.product-info-installment-header svg {
+    color: #1672dd;
+}
+
+.product-info-installment-header span {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-right: -9px;
+}
+
+.product-info-installment-list {
+    margin: 0;
+    padding-right: 18px;
+
+    color: #81858b;
+    font-size: 14px;
+    line-height: 2.2;
+}
+
+@media (max-width: 1200px) {
+    .product-info-title {
+        font-size: 16px;
+        line-height: 2;
+    }
+
+    .product-info-feature-card {
+        width: calc((100% - 10px) / 2);
+    }
+
+    .product-info-plus-content h3 {
+        font-size: 16px;
+    }
+
+    .product-info-installment-header {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 900px) {
+    .product-info {
+        width: 100%;
+    }
+
+    .product-info-meta-row {
+        gap: 6px;
+    }
+
+    .product-info-chip {
+        height: 30px;
+
+        padding: 0 10px;
+
+        font-size: 11px;
+    }
+
+    .product-info-color-section {
+        gap: 14px;
+    }
+
+    .product-info-color-btn {
+        width: 44px;
+        height: 44px;
+    }
+
+    .product-info-color-circle {
+        width: 28px;
+        height: 28px;
+    }
+
+    .product-info-delivery-box {
+        height: auto;
+        min-height: 60px;
+
+        padding: 12px 14px;
+
+        font-size: 15px;
+        line-height: 1.8;
+    }
+
+    .product-info-insurance-box {
+        flex-direction: column;
+    }
+
+    .product-info-insurance-right {
+        width: 100%;
+        height: 52px;
+
+        border-left: none;
+        border-bottom: 1px solid #e0e0e2;
+    }
+
+    .product-info-insurance-center {
+        padding: 14px;
+    }
+
+    .product-info-insurance-left {
+        width: 100%;
+
+        align-items: center;
+        justify-content: flex-end;
+
+        padding: 10px 14px;
+
+        border-top: 1px solid #e0e0e2;
+    }
+
+    .product-info-feature-card {
+        width: calc((100% - 10px) / 2);
+    }
+
+    .product-info-all-features-row {
+        gap: 10px;
+    }
+
+    .product-info-all-features-btn {
+        min-width: 170px;
+        height: 40px;
+
+        font-size: 13px;
+    }
+
+    .product-info-return-row {
+        font-size: 12px;
+        line-height: 2;
+    }
+
+    .product-info-plus-box {
+        flex-direction: column;
+    }
+
+    .product-info-plus-content {
+        padding: 16px;
+    }
+
+    .product-info-plus-image-placeholder {
+        width: 100%;
+        min-height: 70px;
+
+        align-items: center;
+        justify-content: center;
+    }
+
+    .product-info-plus-image-placeholder img {
+        max-width: 120px;
+        height: auto;
+        display: block;
+    }
+
+    .product-info-installment-box {
+        padding: 16px;
+    }
+
+    .product-info-installment-header {
+        font-size: 16px;
+    }
+
+    .product-info-installment-list {
+        font-size: 12px;
+        line-height: 2;
+    }
+}
+
+@media (max-width: 600px) {
+    .product-info-title {
+        margin-top: 10px;
+
+        font-size: 15px;
+        line-height: 2;
+    }
+
+    .product-info-english {
+        font-size: 11px;
+        line-height: 1.8;
+    }
+
+    .product-info-meta-row {
+        align-items: flex-start;
+    }
+
+    .product-info-rating-box {
+        width: 100%;
+
+        font-size: 12px;
+    }
+
+    .product-info-chip {
+        max-width: 100%;
+
+        flex-shrink: 0;
+    }
+
+    .product-info-color-title {
+        font-size: 14px;
+    }
+
+    .product-info-colors {
+        gap: 10px;
+        flex-wrap: wrap;
+    }
+
+    .product-info-color-btn {
+        width: 40px;
+        height: 40px;
+    }
+
+    .product-info-color-circle {
+        width: 26px;
+        height: 26px;
+    }
+
+    .product-info-delivery-box {
+        align-items: flex-start;
+
+        font-size: 13px;
+    }
+
+    .product-info-delivery-image,
+    .product-info-delivery-image-placeholder {
+        width: 30px;
+        height: 30px;
+    }
+
+    .product-info-section-title {
+        margin-top: 22px;
+        margin-bottom: 12px;
+
+        font-size: 15px;
+    }
+
+    .product-info-feature-card {
+        width: 100%;
+        min-height: 70px;
+
+        padding: 12px;
+    }
+
+    .product-info-feature-label {
+        font-size: 12px;
+    }
+
+    .product-info-feature-value {
+        font-size: 15px;
+    }
+
+    .product-info-all-features-row {
+        gap: 8px;
+    }
+
+    .product-info-all-features-btn {
+        min-width: 150px;
+        height: 38px;
+
+        font-size: 12px;
+    }
+
+    .product-info-plus-content h3 {
+        font-size: 15px;
+        line-height: 1.8;
+    }
+
+    .product-info-plus-content ul {
+        font-size: 12px;
+        line-height: 1.9;
+    }
+
+    .product-info-link-btn {
+        font-size: 13px;
+    }
+
+    .product-info-installment-header {
+        font-size: 15px;
+        line-height: 1.8;
+    }
+}
+
+@media (max-width: 420px) {
+    .product-info-breadcrumb-mini {
+        flex-wrap: wrap;
+
+        font-size: 11px;
+    }
+
+    .product-info-title {
+        font-size: 14px;
+    }
+
+    .product-info-meta-row {
+        gap: 6px;
+    }
+
+    .product-info-chip {
+        height: 28px;
+
+        padding: 0 8px;
+
+        font-size: 10px;
+    }
+
+    .product-info-rating-box {
+        font-size: 11px;
+    }
+
+    .product-info-delivery-box {
+        padding: 10px 12px;
+
+        font-size: 12px;
+    }
+
+    .product-info-insurance-title,
+    .product-info-insurance-price {
+        font-size: 12px;
+    }
+
+    .product-info-insurance-old-price {
+        font-size: 11px;
+    }
+
+    .product-info-insurance-left button {
+        font-size: 12px;
+    }
+
+    .product-info-all-features-line {
+        display: none;
+    }
+
+    .product-info-all-features-btn {
+        width: 100%;
+    }
+
+    .product-info-return-row {
+        font-size: 11px;
+    }
+
+    .product-info-plus-content {
+        padding: 14px;
+    }
+
+    .product-info-installment-box {
+        padding: 14px;
+    }
+}

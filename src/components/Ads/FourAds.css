@@ -1,0 +1,68 @@
+.four-ads-section {
+    width: 100%;
+    margin-top: 18px;
+
+    display: flex;
+    justify-content: center;
+
+    direction: rtl;
+}
+
+.four-ads-container {
+    width: 1480px;
+    max-width: calc(100% - 32px);
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.four-ad-card {
+    width: 360px;
+
+    height: 242px;
+
+    border-radius: 16px;
+
+    overflow: hidden;
+
+    cursor: pointer;
+
+    background-color: #f0f0f1;
+}
+
+.four-ad-card img {
+    width: 360px;
+    height: 242px;
+
+    display: block;
+
+    object-fit: fill;
+}
+
+
+@media (max-width: 900px) {
+    .four-ads-container {
+        flex-wrap: wrap;
+        gap: 12px;
+    }
+
+    .four-ad-card {
+        flex: 0 0 calc(50% - 6px);
+        height: 200px;
+    }
+}
+
+@media (max-width: 600px) {
+    .four-ads-container {
+        max-width: calc(100% - 24px);
+        gap: 10px;
+    }
+
+    .four-ad-card {
+        flex: 0 0 calc(50% - 5px);
+        height: 150px;
+
+        border-radius: 12px;
+    }
+}

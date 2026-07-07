@@ -1,0 +1,49 @@
+.product-breadcrumb {
+    min-height: 48px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    direction: rtl;
+
+    color: #81858b;
+}
+  
+
+.product-breadcrumb-right {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.product-breadcrumb-part {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    flex-shrink: 0;
+}
+
+.product-breadcrumb-item {
+    color: #81858b;
+
+    white-space: nowrap;
+}
+
+.product-breadcrumb-separator {
+    color: #c0c2c5;
+}
+
+.product-breadcrumb-left {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 12px;
+}
+
+.product-breadcrumb-left svg {
+    font-size: 15px;
+}

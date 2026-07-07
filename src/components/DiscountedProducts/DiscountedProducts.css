@@ -1,0 +1,224 @@
+.discounted-section {
+    width: 100%;
+    margin-top: 28px;
+
+    display: flex;
+    justify-content: center;
+
+    direction: rtl;
+}
+
+.discounted-container {
+    width: 1480px;
+    max-width: calc(100% - 32px);
+
+    padding: 24px 20px 20px;
+
+    border: 1px solid #e0e0e2;
+    border-radius: 16px;
+
+    background-color: #fff;
+
+    overflow: hidden;
+}
+
+.discounted-header {
+    margin-bottom: 22px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.discounted-title {
+    margin: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+
+    color: #23254e;
+
+    font-size: 21px;
+    font-weight: 700;
+
+    text-align: center;
+}
+
+.discounted-title-icon {
+    width: 24px;
+    height: 24px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 9999px;
+
+    background-color: #ef394e;
+    color: #fff;
+
+    font-size: 16px;
+    font-weight: 800;
+    line-height: 1;
+}
+
+.discounted-list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.discounted-card {
+    width: 16.666%;
+
+    padding: 16px 12px;
+
+    border-left: 1px solid #f0f0f1;
+    border-bottom: 1px solid #f0f0f1;
+
+    cursor: pointer;
+}
+
+.discounted-card:nth-child(6n) {
+    border-left: none;
+}
+
+.discounted-card:nth-last-child(-n + 6) {
+    border-bottom: none;
+}
+
+.discounted-image {
+    width: 100%;
+    height: 190px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-bottom: 12px;
+}
+
+.discounted-image img {
+    max-width: 100%;
+    max-height: 100%;
+
+    display: block;
+
+    object-fit: contain;
+}
+
+.discounted-price-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    margin-bottom: 6px;
+}
+
+.discounted-badge {
+    min-width: 34px;
+    height: 20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 0 6px;
+
+    border-radius: 9999px;
+
+    background-color: #d32f2f;
+    color: #fff;
+
+    font-size: 11px;
+    font-weight: 700;
+}
+
+.discounted-final-price {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+
+    color: #23254e;
+
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.discounted-final-price small {
+    font-size: 10px;
+    font-weight: 400;
+}
+
+.discounted-old-price {
+    padding-left: 28px;
+
+    color: #c0c2c5;
+
+    font-size: 12px;
+    font-weight: 400;
+
+    text-align: left;
+    text-decoration: line-through;
+}
+
+@media (max-width: 1200px) {
+    .discounted-card {
+        width: 25%;
+    }
+
+    .discounted-card:nth-child(6n) {
+        border-left: 1px solid #f0f0f1;
+    }
+
+    .discounted-card:nth-child(4n) {
+        border-left: none;
+    }
+
+    .discounted-card:nth-last-child(-n + 6) {
+        border-bottom: 1px solid #f0f0f1;
+    }
+
+    .discounted-card:nth-last-child(-n + 2) {
+        border-bottom: none;
+    }
+}
+
+@media (max-width: 700px) {
+    .discounted-container {
+        max-width: 100%;
+
+        padding: 20px 12px 16px;
+
+        border-right: none;
+        border-left: none;
+        border-radius: 0;
+    }
+
+    .discounted-title {
+        font-size: 17px;
+    }
+
+    .discounted-card {
+        width: 50%;
+
+        padding: 14px 10px;
+    }
+
+    .discounted-card:nth-child(4n) {
+        border-left: 1px solid #f0f0f1;
+    }
+
+    .discounted-card:nth-child(2n) {
+        border-left: none;
+    }
+
+    .discounted-card:nth-last-child(-n + 2) {
+        border-bottom: none;
+    }
+
+    .discounted-image {
+        height: 150px;
+    }
+}

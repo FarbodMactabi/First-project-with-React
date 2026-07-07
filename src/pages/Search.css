@@ -1,0 +1,40 @@
+.search-page {
+    width: 100%;
+
+    direction: rtl;
+
+    background-color: #fff;
+}
+
+.search-body-section {
+    width: 100%;
+
+    margin-top: 18px;
+
+    display: flex;
+    justify-content: center;
+
+    direction: rtl;
+
+    overflow: visible;
+}
+
+.search-body-container {
+    width: 1480px;
+    max-width: calc(100% - 32px);
+
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 16px;
+
+    direction: rtl;
+
+    overflow: visible;
+}
+
+@media (max-width: 900px) {
+    .search-body-container {
+        flex-direction: column;
+    }
+}

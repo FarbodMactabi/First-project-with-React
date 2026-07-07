@@ -1,0 +1,68 @@
+.two-ads-section {
+    width: 100%;
+    margin-top: 28px;
+
+    display: flex;
+    justify-content: center;
+
+    direction: rtl;
+}
+
+.two-ads-container {
+    width: 1480px;
+    max-width: calc(100% - 32px);
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+}
+
+.two-ad-card {
+    flex: 1;
+
+    height: 264px;
+
+    border-radius: 16px;
+
+    overflow: hidden;
+
+    background-color: #f0f0f1;
+
+    cursor: pointer;
+}
+
+.two-ad-card img {
+    width: 100%;
+    height: 100%;
+
+    display: block;
+
+    object-fit: cover;
+}
+
+@media (max-width: 800px) {
+    .two-ads-container {
+        gap: 12px;
+    }
+
+    .two-ad-card {
+        height: 200px;
+        border-radius: 14px;
+    }
+}
+
+@media (max-width: 600px) {
+    .two-ads-container {
+        flex-direction: column;
+        max-width: calc(100% - 24px);
+    }
+
+    .two-ad-card {
+        width: 100%;
+        height: 170px;
+        flex: none;
+
+        border-radius: 12px;
+    }
+}

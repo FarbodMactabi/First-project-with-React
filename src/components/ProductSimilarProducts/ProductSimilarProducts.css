@@ -1,0 +1,391 @@
+.product-similar {
+    width: 100%;
+
+    margin-top: 32px;
+
+    direction: rtl;
+
+    border: 1px solid #e0e0e2;
+    border-radius: 10px;
+
+    background-color: #ffffff;
+
+    overflow: hidden;
+}
+
+.product-similar-header {
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 18px;
+
+    padding: 22px 22px 0;
+}
+
+.product-similar-header h2 {
+    position: relative;
+
+    margin: 0;
+
+    color: #000000;
+
+    font-size: 17px;
+    font-weight: 700;
+}
+
+.product-similar-header h2::after {
+    content: "";
+
+    width: 72px;
+    height: 2px;
+
+    position: absolute;
+    right: 0;
+    bottom: -14px;
+
+    background-color: #ef4056;
+}
+
+.product-similar-header span {
+    margin-top: 8px;
+
+    color: #ef4056;
+
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.product-similar-wrapper {
+    width: 100%;
+
+    position: relative;
+
+    margin-top: 18px;
+}
+
+.product-similar-products {
+    width: 100%;
+
+    display: flex;
+    align-items: stretch;
+
+    overflow-x: auto;
+    overflow-y: hidden;
+
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+
+    direction: rtl;
+}
+
+.product-similar-products::-webkit-scrollbar {
+    display: none;
+}
+
+.product-similar-card {
+    width: 184px;
+    min-width: 184px;
+    min-height: 330px;
+
+    display: flex;
+    flex-direction: column;
+
+    padding: 18px 14px;
+
+    border-left: 1px solid #f0f0f1;
+
+    background-color: #ffffff;
+
+    cursor: pointer;
+}
+
+.product-similar-card:last-child {
+    border-left: none;
+}
+
+.product-similar-image {
+    width: 100%;
+    height: 150px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.product-similar-image img {
+    width: 145px;
+    height: 145px;
+
+    object-fit: contain;
+    display: block;
+}
+
+.product-similar-image-placeholder {
+    width: 130px;
+    height: 130px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border: 1px dashed #c0c2c5;
+    border-radius: 10px;
+
+    color: #a1a3a8;
+
+    font-size: 12px;
+}
+
+.product-similar-title {
+    height: 48px;
+
+    margin: 14px 0 0;
+
+    color: #3f4064;
+
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 2;
+
+    overflow: hidden;
+
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+
+.product-similar-delivery {
+    min-height: 22px;
+
+    margin-top: 8px;
+
+    display: flex;
+    align-items: center;
+    gap: 4px;
+
+    color: #62666d;
+
+    font-size: 11px;
+    font-weight: 500;
+    line-height: 1.8;
+}
+
+.product-similar-delivery svg {
+    color: #1672dd;
+
+    font-size: 14px;
+
+    flex-shrink: 0;
+}
+
+.product-similar-delivery-warning {
+    color: #ef4056;
+}
+
+.product-similar-price-box {
+    margin-top: auto;
+
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+
+    width: 100%;
+}
+
+.product-similar-price-main-row {
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px;
+
+    direction: ltr;
+}
+
+.product-similar-current-price {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+
+    color: #23254e;
+
+    min-width: 0;
+}
+
+.product-similar-current-price span {
+    font-size: 14px;
+    font-weight: 800;
+    line-height: 1;
+}
+
+.product-similar-current-price small {
+    font-size: 10px;
+    font-weight: 500;
+}
+
+.product-similar-discount {
+    min-width: 34px;
+    height: 20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 0 6px;
+
+    border-radius: 9999px;
+
+    background-color: #ef4056;
+
+    color: #ffffff;
+
+    font-size: 11px;
+    font-weight: 700;
+
+    flex-shrink: 0;
+}
+
+.product-similar-old-price {
+    display: block;
+
+    padding-left: 4px;
+
+    color: #c0c2c5;
+
+    font-size: 11px;
+    text-align: left;
+    text-decoration: line-through;
+}
+
+.product-similar-scroll-btn {
+    width: 40px;
+    height: 40px;
+
+    position: absolute;
+    top: 50%;
+    z-index: 20;
+
+    transform: translateY(-50%);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border: 1px solid #e0e0e2;
+    border-radius: 9999px;
+
+    background-color: #ffffff;
+
+    color: #424750;
+
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.14);
+
+    cursor: pointer;
+
+    transition: 0.2s ease;
+}
+
+.product-similar-scroll-btn:hover {
+    background-color: #f5f5f5;
+}
+
+.product-similar-scroll-btn svg {
+    font-size: 22px;
+}
+
+.product-similar-scroll-next {
+    left: 16px;
+}
+
+.product-similar-scroll-prev {
+    right: 16px;
+}
+
+.product-similar-wrapper::before,
+.product-similar-wrapper::after {
+    content: "";
+
+    width: 70px;
+
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    z-index: 2;
+
+    pointer-events: none;
+}
+
+@media (max-width: 1200px) {
+    .product-similar-card {
+        width: 170px;
+        min-width: 170px;
+    }
+
+    .product-similar-image img {
+        width: 132px;
+        height: 132px;
+    }
+}
+
+@media (max-width: 700px) {
+    .product-similar-header {
+        padding: 18px 16px 0;
+    }
+
+    .product-similar-card {
+        width: 158px;
+        min-width: 158px;
+
+        padding: 16px 12px;
+    }
+
+    .product-similar-image {
+        height: 130px;
+    }
+
+    .product-similar-image img {
+        width: 118px;
+        height: 118px;
+    }
+
+    .product-similar-image-placeholder {
+        width: 110px;
+        height: 110px;
+    }
+
+    .product-similar-title {
+        font-size: 11px;
+    }
+
+    .product-similar-scroll-btn {
+        width: 36px;
+        height: 36px;
+    }
+
+    .product-similar-scroll-btn svg {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 420px) {
+    .product-similar-card {
+        width: 148px;
+        min-width: 148px;
+    }
+
+    .product-similar-wrapper::before,
+    .product-similar-wrapper::after {
+        width: 36px;
+    }
+
+    .product-similar-scroll-next {
+        left: 10px;
+    }
+
+    .product-similar-scroll-prev {
+        right: 10px;
+    }
+}

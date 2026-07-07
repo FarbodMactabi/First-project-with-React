@@ -1,0 +1,140 @@
+.shortcut-section {
+    width: 100%;
+    height: 130px;
+    margin-top: 15px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: #fff;
+
+    direction: rtl;
+
+    overflow: hidden;
+}
+
+.shortcut-container {
+    width: 1430px;
+    max-width: calc(100% - 32px);
+
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+
+    flex-wrap: nowrap;
+
+    overflow-x: auto;
+    overflow-y: hidden;
+
+    scrollbar-width: none;
+}
+
+.shortcut-item {
+    width: 86px;
+    min-width: 86px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    cursor: pointer;
+}
+
+.shortcut-image {
+    width: 52px;
+    height: 52px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+    border-radius: 16px;
+
+    overflow: hidden;
+}
+
+.shortcut-image img {
+    width: 100%;
+    height: 100%;
+
+    display: block;
+
+    object-fit: cover;
+}
+
+.shortcut-title {
+    width: 80px;
+
+    margin: 0;
+
+    color: #3f4064;
+
+    font-size: 11px;
+    font-weight: 500;
+    line-height: 1.6;
+
+    text-align: center;
+
+    overflow: hidden;
+}
+
+.shortcut-item:last-child .shortcut-image {
+    background-color: #f0f0f1;
+    border-radius: 9999px;
+}
+
+.shortcut-item:last-child .shortcut-image img {
+    width: 28px;
+    height: 28px;
+    object-fit: contain;
+}
+
+@media (max-width: 900px) {
+    .shortcut-section {
+        height: 120px;
+    }
+
+    .shortcut-container {
+        overflow-x: auto;
+        gap: 24px;
+        justify-content: center;
+
+        scrollbar-width: none;
+    }
+
+    .shortcut-container::-webkit-scrollbar {
+        display: none;
+    }
+
+    .shortcut-item {
+        width: 80px;
+        min-width: 80px;
+    }
+}
+
+@media (max-width: 600px) {
+    .shortcut-section {
+        height: 112px;
+    }
+
+    .shortcut-container {
+        gap: 18px;
+    }
+
+    .shortcut-item {
+        width: 72px;
+        min-width: 72px;
+    }
+
+    .shortcut-image {
+        width: 48px;
+        height: 48px;
+    }
+
+    .shortcut-title {
+        width: 72px;
+        font-size: 10px;
+    }
+}

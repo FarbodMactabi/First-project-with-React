@@ -1,0 +1,248 @@
+.product-gallery {
+    width: 100%;
+
+    direction: rtl;
+}
+
+.product-gallery-main {
+    width: 100%;
+    min-height: 560px;
+
+    display: flex;
+    align-items: flex-start;
+    gap: 14px;
+}
+
+.product-gallery-actions {
+    width: 44px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 18px;
+
+    flex-shrink: 0;
+
+    padding-top: 10px;
+
+    overflow: visible;
+}
+
+.product-gallery-action-button {
+    width: 24px;
+    height: 24px;
+
+    position: relative;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border: none;
+    background-color: transparent;
+
+    color: #424750;
+
+    cursor: pointer;
+}
+
+.product-gallery-action-tooltip {
+    min-width: max-content;
+    height: 42px;
+
+    position: absolute;
+    top: 50%;
+    right: calc(100% + 8px);
+    z-index: 50;
+
+    transform: translateY(-50%) translateX(6px);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 0 16px;
+
+    border-radius: 4px;
+
+    background-color: #3f4064;
+
+    color: #ffffff;
+
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 1;
+
+    white-space: nowrap;
+
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+
+    transition:
+        opacity 0.18s ease,
+        visibility 0.18s ease,
+        transform 0.18s ease;
+}
+
+.product-gallery-action-button:hover .product-gallery-action-tooltip,
+.product-gallery-action-button:focus-visible .product-gallery-action-tooltip {
+    opacity: 1;
+    visibility: visible;
+
+    transform: translateY(-50%) translateX(0);
+}
+
+.product-gallery-action-button svg {
+    font-size: 24px;
+    stroke-width: 1.8;
+    transform: scaleX(-1);
+}
+
+.product-gallery-main-image {
+    flex: 1;
+    min-width: 0;
+    min-height: 560px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.product-gallery-main-image img {
+    width: 500px;
+    height: 500px;
+
+    object-fit: contain;
+    display: block;
+}
+
+.product-gallery-thumbnails {
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 8px;
+
+    margin-top: 12px;
+
+    direction: rtl;
+}
+
+.product-gallery-thumbnail {
+    width: 82px;
+    height: 82px;
+
+    position: relative;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border: 1px solid #e0e0e2;
+    border-radius: 8px;
+    background-color: #ffffff;
+
+    overflow: hidden;
+
+    cursor: default;
+}
+
+.product-gallery-thumbnail-active {
+    border-color: #e0e0e2;
+}
+
+.product-gallery-thumbnail img {
+    width: 66px;
+    height: 66px;
+
+    object-fit: contain;
+    display: block;
+}
+
+.product-gallery-thumbnail-more img {
+    width: 100%;
+    height: 100%;
+
+    filter: blur(4px);
+    opacity: 0.7;
+
+    object-fit: cover;
+}
+
+.product-gallery-thumbnail-more::after {
+    content: "";
+
+    position: absolute;
+    inset: 0;
+
+    background-color: rgba(255, 255, 255, 0.45);
+}
+
+.product-gallery-thumbnail-more span {
+    position: absolute;
+    z-index: 2;
+
+    color: #3f4064;
+
+    font-size: 22px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.product-gallery-footer {
+    width: 100%;
+
+    margin-top: 14px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    color: #a1a3a8;
+
+    font-size: 12px;
+}
+
+.product-gallery-report {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+
+    color: #81858b;
+}
+
+.product-gallery-report svg {
+    font-size: 16px;
+}
+
+.product-gallery-code {
+    color: #c0c2c5;
+
+    font-size: 12px;
+}
+
+@media (max-width: 900px) {
+    .product-gallery-main {
+        min-height: 420px;
+    }
+
+    .product-gallery-main-image {
+        min-height: 420px;
+    }
+
+    .product-gallery-main-image img {
+        width: 360px;
+        height: 360px;
+    }
+
+    .product-gallery-thumbnails {
+        overflow-x: auto;
+        padding-bottom: 4px;
+    }
+
+    .product-gallery-thumbnail {
+        flex-shrink: 0;
+    }
+}

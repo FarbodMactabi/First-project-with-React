@@ -1,0 +1,144 @@
+.shop-category-section {
+    width: 100%;
+    margin-top: 28px;
+
+    display: flex;
+    justify-content: center;
+
+    direction: rtl;
+}
+
+.shop-category-container {
+    width: 1480px;
+    max-width: calc(100% - 32px);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.shop-category-title {
+    margin: 0 0 28px;
+
+    color: #23254e;
+
+    font-size: 21px;
+    font-weight: 700;
+
+    text-align: center;
+}
+
+.shop-category-list {
+    width: 100%;
+
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: center;
+
+    gap: 34px 44px;
+}
+
+.shop-category-card {
+    width: 120px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    cursor: pointer;
+}
+
+.shop-category-image {
+    width: 100px;
+    height: 100px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-bottom: 12px;
+
+    overflow: hidden;
+}
+
+.shop-category-image img {
+    max-width: 100%;
+    max-height: 100%;
+
+    display: block;
+
+    object-fit: contain;
+}
+
+.shop-category-name {
+    width: 100%;
+
+    margin: 0;
+
+    color: #0c0c0c;
+
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 1.7;
+
+    text-align: center;
+}
+
+/* Responsive */
+
+@media (max-width: 1100px) {
+    .shop-category-list {
+        gap: 30px 32px;
+    }
+
+    .shop-category-card {
+        width: 110px;
+    }
+
+    .shop-category-image {
+        width: 90px;
+        height: 90px;
+    }
+}
+
+@media (max-width: 700px) {
+    .shop-category-section {
+        margin-top: 24px;
+    }
+
+    .shop-category-title {
+        margin-bottom: 22px;
+
+        font-size: 18px;
+    }
+
+    .shop-category-list {
+        justify-content: space-between;
+        gap: 24px 0;
+    }
+
+    .shop-category-card {
+        width: 25%;
+    }
+
+    .shop-category-image {
+        width: 74px;
+        height: 74px;
+    }
+
+    .shop-category-name {
+        font-size: 11px;
+    }
+}
+
+@media (max-width: 480px) {
+    .shop-category-card {
+        width: 33.333%;
+    }
+
+    .shop-category-image {
+        width: 68px;
+        height: 68px;
+    }
+}

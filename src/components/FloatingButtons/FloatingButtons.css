@@ -1,0 +1,82 @@
+.floating-button {
+    position: fixed;
+    bottom: 24px;
+
+    border: none;
+    border-radius: 9999px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    cursor: pointer;
+    z-index: 999;
+}
+
+.floating-support {
+    left: 32px;
+
+    width: 52px;
+    height: 52px;
+
+    background: linear-gradient(150deg, rgb(127, 83, 239) 14.63%, rgb(37, 134, 255));;
+    color: #fff;
+
+    font-size: 24px;
+}
+
+.floating-supermarket {
+    right: 32px;
+
+    height: 52px;
+
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    padding: 0 18px;
+
+    background-color: #029a49;
+    color: #fff;
+
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.floating-supermarket svg,
+.floating-support svg {
+    font-size: 24px;
+    flex-shrink: 0;
+}
+
+.floating-supermarket span {
+    white-space: nowrap;
+}
+
+@media (max-width: 700px) {
+    .floating-support {
+        left: 16px;
+        bottom: 18px;
+
+        width: 48px;
+        height: 48px;
+
+        font-size: 22px;
+    }
+
+    .floating-supermarket {
+        right: 16px;
+        bottom: 18px;
+
+        height: 48px;
+
+        padding: 0 14px;
+
+        font-size: 13px;
+    }
+
+    .floating-supermarket svg,
+    .floating-support svg {
+        font-size: 22px;
+    }
+}

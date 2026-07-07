@@ -1,0 +1,495 @@
+.product-buybox-first {
+    width: 336px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    direction: rtl;
+
+    flex-shrink: 0;
+}
+
+.product-buybox-card-first {
+    width: 100%;
+
+    padding: 18px 16px;
+
+    border: 1px solid #e0e0e2;
+    border-radius: 10px;
+
+    background-color: #f7f7f8;
+}
+
+.product-buybox-header-first {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+}
+
+.product-buybox-header-first h3 {
+    margin: 0;
+
+    color: #000000;
+
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.product-buybox-header-first button {
+    border: none;
+    background-color: transparent;
+
+    color: #1672dd;
+
+    font-family: inherit;
+    font-size: 13px;
+    font-weight: 500;
+
+    cursor: pointer;
+}
+
+.product-buybox-seller-main {
+    margin-top: 24px;
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.product-buybox-seller-identity {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.product-buybox-seller-logo-box {
+    width: 28px;
+    height: 28px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    flex-shrink: 0;
+}
+
+.product-buybox-seller-logo {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+
+    object-fit: contain;
+    display: block;
+}
+
+.product-buybox-image-placeholder {
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border: 1px dashed #c0c2c5;
+    border-radius: 8px;
+
+    color: #81858b;
+
+    font-size: 10px;
+    font-weight: 500;
+    line-height: 1;
+}
+
+.product-buybox-seller-name {
+    color: #3f4064;
+
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.product-buybox-seller-info {
+    margin-top: 16px;
+
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    font-size: 12px;
+}
+
+.product-buybox-seller-rate {
+    color: #00a049;
+    font-weight: 700;
+}
+
+.product-buybox-seller-separator {
+    color: #c0c2c5;
+}
+
+.product-buybox-seller-performance {
+    color: #00a049;
+    font-weight: 700;
+}
+
+.product-buybox-divider {
+    width: 100%;
+    height: 1px;
+
+    margin: 18px 0;
+
+    background-color: #e0e0e2;
+}
+
+.product-buybox-cheaper-box {
+    width: 100%;
+    min-height: 36px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px;
+
+    padding: 0 10px;
+
+    border: none;
+    border-radius: 6px;
+
+    background-color: #e8f1ff;
+
+    color: #3f4064;
+
+    font-family: inherit;
+    font-size: 12px;
+
+    cursor: pointer;
+}
+
+.product-buybox-cheaper-box svg:first-child {
+    color: #2b7fff;
+    font-size: 16px;
+}
+
+.product-buybox-cheaper-box svg:last-child {
+    color: #a1a3a8;
+    font-size: 16px;
+}
+
+.product-buybox-price-section {
+    margin-top: 16px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 6px;
+}
+
+.product-buybox-price-top {
+    display: flex;
+    direction: ltr;
+    align-items: center;
+    gap: 8px;
+}
+
+.product-buybox-discount {
+    min-width: 34px;
+    height: 20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 0 6px;
+
+    border-radius: 9999px;
+
+    background-color: #ef4056;
+
+    color: #ffffff;
+
+    font-size: 11px;
+    font-weight: 700;
+}
+
+.product-buybox-old-price {
+    color: #c0c2c5;
+
+    font-size: 12px;
+    text-decoration: line-through;
+}
+
+.product-buybox-price-main {
+    display: flex;
+    align-items: flex-end;
+    gap: 5px;
+
+    color: #23254e;
+}
+
+.product-buybox-price-main span {
+    font-size: 22px;
+    font-weight: 800;
+    line-height: 1;
+}
+
+.product-buybox-price-main small {
+    font-size: 11px;
+    font-weight: 500;
+}
+
+.product-buybox-add-button {
+    width: 100%;
+    height: 48px;
+
+    margin-top: 18px;
+
+    border: none;
+    border-radius: 8px;
+
+    background-color: #ef4056;
+
+    color: #ffffff;
+
+    font-family: inherit;
+    font-size: 15px;
+    font-weight: 700;
+
+    cursor: pointer;
+}
+
+.product-buybox-guarantee {
+    margin-top: 22px;
+
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 10px;
+
+    color: #23254e;
+
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 2;
+
+    text-align: center;
+}
+
+.product-buybox-guarantee svg {
+    margin-top: 4px;
+
+    color: #3f4064;
+    font-size: 20px;
+
+    flex-shrink: 0;
+}
+
+.product-buybox-shipping-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    color: #23254e;
+
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.product-buybox-shipping-header svg {
+    color: #a1a3a8;
+    font-size: 18px;
+}
+
+.product-buybox-shipping-list {
+    margin-top: 16px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.product-buybox-shipping-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    color: #62666d;
+
+    font-size: 12px;
+    line-height: 1.8;
+}
+
+.product-buybox-shipping-icon {
+    width: 18px;
+    height: 18px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    flex-shrink: 0;
+}
+
+.product-buybox-shipping-icon svg {
+    font-size: 17px;
+}
+
+.product-buybox-shipping-red {
+    color: #ef4056;
+}
+
+.product-buybox-shipping-blue {
+    color: #1672dd;
+}
+
+.product-buybox-plus {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.product-buybox-plus-title {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-right: -8px;
+
+    color: #3f4064;
+
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.product-buybox-plus-title svg {
+    color: #c337a7;
+    font-size: 20px;
+}
+
+.product-buybox-plus-text {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    color: #81858b;
+
+    font-size: 12px;
+    line-height: 1.8;
+}
+
+.product-buybox-plus-dot {
+    width: 5px;
+    height: 5px;
+
+    display: block;
+
+    border-radius: 9999px;
+
+    background-color: #c337a7;
+
+    flex-shrink: 0;
+}
+
+.product-buybox-club {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+
+    color: #3f4064;
+
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.product-buybox-club-logo-box {
+    width: 22px;
+    height: 22px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    flex-shrink: 0;
+}
+
+.product-buybox-club-logo {
+    width: 100%;
+    height: 100%;
+
+    object-fit: contain;
+    display: block;
+}
+
+.product-buybox-club svg {
+    color: #a1a3a8;
+    font-size: 16px;
+}
+
+.product-buybox-footer {
+    width: 100%;
+    height: 44px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px;
+
+    padding: 0 14px;
+
+    border: 1px solid #e0e0e2;
+    border-radius: 8px;
+
+    background-color: #ffffff;
+
+    color: #81858b;
+
+    font-family: inherit;
+    font-size: 12px;
+
+    cursor: pointer;
+}
+
+.product-buybox-footer svg {
+    color: #a1a3a8;
+    font-size: 16px;
+}
+
+@media (max-width: 1200px) {
+    .product-buybox {
+        width: 320px;
+    }
+}
+
+@media (max-width: 900px) {
+    .product-buybox {
+        width: 100%;
+    }
+
+    .product-buybox-card {
+        background-color: #ffffff;
+    }
+}
+
+@media (max-width: 420px) {
+    .product-buybox-card {
+        padding: 16px 14px;
+    }
+
+    .product-buybox-price-main span {
+        font-size: 20px;
+    }
+
+    .product-buybox-add-button {
+        height: 46px;
+        font-size: 14px;
+    }
+
+    .product-buybox-guarantee {
+        font-size: 11px;
+    }
+
+    .product-buybox-shipping-item,
+    .product-buybox-plus-text {
+        font-size: 11px;
+    }
+}

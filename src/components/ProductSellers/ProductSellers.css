@@ -1,0 +1,530 @@
+.product-sellers {
+    width: 100%;
+
+    margin-top: 32px;
+    padding: 0 0 22px;
+
+    direction: rtl;
+
+    border-bottom: 4px solid #f0f0f1;
+}
+
+.product-sellers-header {
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+
+    margin-bottom: 28px;
+}
+
+.product-sellers-header h2 {
+    position: relative;
+
+    margin: 0;
+
+    color: #000000;
+
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.product-sellers-header h2::after {
+    content: "";
+
+    width: 72px;
+    height: 2px;
+
+    position: absolute;
+    right: 0;
+    bottom: -16px;
+
+    background-color: #ef4056;
+}
+
+.product-sellers-list {
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.product-sellers-row {
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+
+    padding: 0 18px;
+
+    background-color: #ffffff;
+}
+
+.product-sellers-row-highlight {
+    border-radius: 8px;
+    background-color: #f7f7f8;
+}
+
+.product-sellers-main-row {
+    width: 100%;
+    min-height: 96px;
+
+    display: flex;
+    align-items: center;
+    gap: 28px;
+
+    direction: rtl;
+}
+
+.product-sellers-seller-cell {
+    width: 330px;
+    min-width: 330px;
+
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.product-sellers-logo-box {
+    width: 34px;
+    height: 34px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    flex-shrink: 0;
+}
+
+.product-sellers-logo {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+
+    object-fit: contain;
+    display: block;
+}
+
+.product-sellers-store-icon {
+    color: #3f4064;
+
+    font-size: 28px;
+
+    flex-shrink: 0;
+}
+
+.product-sellers-logo-placeholder {
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border: 1px dashed #c0c2c5;
+    border-radius: 9999px;
+
+    color: #a1a3a8;
+
+    font-size: 10px;
+}
+
+.product-sellers-seller-info {
+    min-width: 0;
+
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.product-sellers-seller-title-row {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.product-sellers-seller-name {
+    color: #23254e;
+
+    font-size: 15px;
+    font-weight: 500;
+
+    white-space: nowrap;
+}
+
+.product-sellers-selected-badge {
+    height: 22px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 0 10px;
+
+    border-radius: 9999px;
+    background-color: #e5f7ee;
+
+    color: #00a049;
+
+    font-size: 11px;
+    font-weight: 700;
+}
+
+.product-sellers-performance-row {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    font-size: 12px;
+}
+
+.product-sellers-rate {
+    color: #00a049;
+    font-weight: 700;
+}
+
+.product-sellers-separator {
+    color: #c0c2c5;
+}
+
+.product-sellers-performance {
+    color: #00a049;
+    font-weight: 700;
+}
+
+.product-sellers-delivery-cell {
+    width: 260px;
+    min-width: 260px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.product-sellers-warranty-cell {
+    flex: 1;
+    min-width: 260px;
+
+    display: flex;
+    align-items: center;
+}
+
+.product-sellers-cell-title {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    color: #23254e;
+
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 2;
+}
+
+.product-sellers-cell-title svg {
+    color: #000000;
+
+    font-size: 18px;
+
+    flex-shrink: 0;
+}
+
+.product-sellers-cell-description {
+    color: #81858b;
+
+    font-size: 12px;
+    line-height: 1.8;
+}
+
+.product-sellers-price-cell {
+    width: 270px;
+    min-width: 270px;
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 18px;
+}
+
+.product-sellers-price-row {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    direction: ltr;
+}
+
+.product-sellers-discount {
+    min-width: 34px;
+    height: 22px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 0 6px;
+
+    border-radius: 9999px;
+    background-color: #ef4056;
+
+    color: #ffffff;
+
+    font-size: 11px;
+    font-weight: 700;
+}
+
+.product-sellers-price-content {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    direction: rtl;
+}
+
+.product-sellers-old-price {
+    color: #c0c2c5;
+
+    font-size: 11px;
+    text-decoration: line-through;
+}
+
+.product-sellers-current-price {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+
+    color: #23254e;
+}
+
+.product-sellers-current-price span {
+    font-size: 16px;
+    font-weight: 800;
+}
+
+.product-sellers-current-price small {
+    font-size: 10px;
+    font-weight: 500;
+}
+
+.product-sellers-add-button {
+    width: 150px;
+    height: 48px;
+
+    border: none;
+    border-radius: 8px;
+    background-color: #ef4056;
+
+    color: #ffffff;
+
+    font-family: inherit;
+    font-size: 13px;
+    font-weight: 700;
+
+    cursor: pointer;
+
+    flex-shrink: 0;
+}
+
+.product-sellers-plus-row {
+    height: 32px;
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+
+    margin: -6px 46px 0 0;
+    padding: 0 14px;
+
+    border-radius: 8px 8px 0 0;
+
+    background: linear-gradient(
+        270deg,
+        #fff1fb 0%,
+        #fff6fc 42%,
+        rgba(255, 255, 255, 0) 100%
+    );
+
+    color: #c337a7;
+
+    font-size: 12px;
+}
+
+.product-sellers-plus-content {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    min-width: 0;
+}
+
+.product-sellers-plus-content svg {
+    color: #c337a7;
+    font-size: 18px;
+
+    flex-shrink: 0;
+}
+
+.product-sellers-plus-content strong {
+    color: #c337a7;
+    font-weight: 700;
+
+    white-space: nowrap;
+}
+
+.product-sellers-plus-content span {
+    color: #81858b;
+
+    white-space: nowrap;
+}
+
+@media (max-width: 1400px) {
+    .product-sellers-main-row {
+        gap: 20px;
+    }
+
+    .product-sellers-seller-cell {
+        width: 300px;
+        min-width: 300px;
+    }
+
+    .product-sellers-delivery-cell {
+        width: 230px;
+        min-width: 230px;
+    }
+
+    .product-sellers-price-cell {
+        width: 250px;
+        min-width: 250px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .product-sellers-main-row {
+        gap: 16px;
+    }
+
+    .product-sellers-seller-cell {
+        width: 260px;
+        min-width: 260px;
+    }
+
+    .product-sellers-delivery-cell {
+        width: 210px;
+        min-width: 210px;
+    }
+
+    .product-sellers-warranty-cell {
+        min-width: 220px;
+    }
+
+    .product-sellers-price-cell {
+        width: 220px;
+        min-width: 220px;
+        gap: 12px;
+    }
+
+    .product-sellers-add-button {
+        width: 132px;
+    }
+}
+
+@media (max-width: 900px) {
+    .product-sellers {
+        margin-top: 24px;
+    }
+
+    .product-sellers-header {
+        margin-bottom: 24px;
+    }
+
+    .product-sellers-list {
+        gap: 12px;
+    }
+
+    .product-sellers-row {
+        padding: 14px;
+
+        border: 1px solid #f0f0f1;
+        border-radius: 10px;
+    }
+
+    .product-sellers-row-highlight {
+        background-color: #ffffff;
+    }
+
+    .product-sellers-main-row {
+        min-height: auto;
+
+        flex-direction: column;
+        align-items: stretch;
+        gap: 14px;
+    }
+
+    .product-sellers-seller-cell,
+    .product-sellers-delivery-cell,
+    .product-sellers-warranty-cell,
+    .product-sellers-price-cell {
+        width: 100%;
+        min-width: 0;
+    }
+
+    .product-sellers-warranty-cell {
+        align-items: flex-start;
+    }
+
+    .product-sellers-price-cell {
+        justify-content: space-between;
+    }
+
+    .product-sellers-plus-row {
+        height: auto;
+
+        margin: 10px 0 0;
+        padding: 9px 12px;
+
+        border-radius: 8px;
+
+        background: #fff4fb;
+    }
+}
+
+@media (max-width: 480px) {
+    .product-sellers-header h2 {
+        font-size: 16px;
+    }
+
+    .product-sellers-main-row {
+        gap: 12px;
+    }
+
+    .product-sellers-seller-name {
+        font-size: 13px;
+    }
+
+    .product-sellers-cell-title {
+        font-size: 12px;
+    }
+
+    .product-sellers-cell-description {
+        font-size: 11px;
+    }
+
+    .product-sellers-price-cell {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 12px;
+    }
+
+    .product-sellers-price-row {
+        justify-content: flex-start;
+    }
+
+    .product-sellers-add-button {
+        width: 100%;
+    }
+
+    .product-sellers-plus-content {
+        flex-wrap: wrap;
+    }
+}
