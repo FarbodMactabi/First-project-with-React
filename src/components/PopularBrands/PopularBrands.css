@@ -45,43 +45,43 @@
     line-height: 1;
 }
 
-.popular-brands-wrapper {
+.popular-brands-swiper {
     position: relative;
 
     width: 100%;
+    height: 118px;
+
+    overflow: hidden;
+
+    --swiper-navigation-size: 14px;
+    --swiper-navigation-color: #424750;
 }
 
-.popular-brands-list {
-    width: 100%;
-
-    display: flex;
+.popular-brands-swiper .swiper-wrapper {
     align-items: center;
-
-    overflow-x: auto;
-    overflow-y: hidden;
-
-    scroll-behavior: smooth;
-
-    scrollbar-width: none;
 }
 
-.popular-brands-list::-webkit-scrollbar {
-    display: none;
+.popular-brand-slide {
+    width: 150px !important;
+    height: 118px;
+
+    flex-shrink: 0;
 }
 
 .popular-brand-card {
-    width: 150px;
-    min-width: 150px;
-
+    width: 100%;
     height: 118px;
 
     display: flex;
     align-items: center;
     justify-content: center;
 
+    box-sizing: border-box;
     padding: 16px;
 
     border-left: 1px solid #f0f0f1;
+
+    background-color: #fff;
 
     cursor: pointer;
 }
@@ -95,7 +95,8 @@
     object-fit: contain;
 }
 
-.popular-brands-btn {
+.popular-brands-swiper .swiper-button-prev,
+.popular-brands-swiper .swiper-button-next {
     position: absolute;
     top: 50%;
 
@@ -106,6 +107,10 @@
     align-items: center;
     justify-content: center;
 
+    box-sizing: border-box;
+    margin-top: 0;
+    padding: 0;
+
     transform: translateY(-50%);
 
     border: 1px solid #e0e0e2;
@@ -114,26 +119,55 @@
     background-color: #fff;
     color: #424750;
 
-    font-size: 26px;
-    line-height: 1;
-
+    overflow: hidden;
     cursor: pointer;
 
     z-index: 10;
 
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
+
+    transition:
+        opacity 0.2s ease,
+        visibility 0.2s ease,
+        background-color 0.2s ease;
 }
 
-.popular-brands-btn:hover {
-    background-color: #f5f5f5;
+.popular-brands-swiper .swiper-button-prev {
+    right: 16px;
+    left: auto;
 }
 
-.popular-brands-next {
+.popular-brands-swiper .swiper-button-next {
+    right: auto;
     left: 16px;
 }
 
-.popular-brands-prev {
-    right: 16px;
+.popular-brands-swiper .swiper-button-prev:hover,
+.popular-brands-swiper .swiper-button-next:hover {
+    background-color: #f5f5f5;
+}
+
+.popular-brands-swiper .swiper-button-prev::after,
+.popular-brands-swiper .swiper-button-next::after {
+    font-size: 14px !important;
+    font-weight: 700;
+    line-height: 1 !important;
+}
+
+.popular-brands-swiper .swiper-button-prev svg,
+.popular-brands-swiper .swiper-button-next svg {
+    width: 14px !important;
+    height: 14px !important;
+
+    flex-shrink: 0;
+}
+
+.popular-brands-swiper .popular-brands-button-disabled {
+    display: none !important;
+}
+
+.popular-brands-swiper .popular-brands-button-lock {
+    display: none !important;
 }
 
 @media (max-width: 900px) {
@@ -151,10 +185,16 @@
         font-size: 20px;
     }
 
-    .popular-brand-card {
-        width: 130px;
-        min-width: 130px;
+    .popular-brands-swiper {
+        height: 105px;
+    }
 
+    .popular-brand-slide {
+        width: 130px !important;
+        height: 105px;
+    }
+
+    .popular-brand-card {
         height: 105px;
     }
 
@@ -176,10 +216,18 @@
         font-size: 17px;
     }
 
-    .popular-brand-card {
-        width: 115px;
-        min-width: 115px;
+    .popular-brands-swiper {
+        height: 95px;
 
+        --swiper-navigation-size: 12px;
+    }
+
+    .popular-brand-slide {
+        width: 115px !important;
+        height: 95px;
+    }
+
+    .popular-brand-card {
         height: 95px;
     }
 
@@ -187,18 +235,28 @@
         max-height: 52px;
     }
 
-    .popular-brands-btn {
+    .popular-brands-swiper .swiper-button-prev,
+    .popular-brands-swiper .swiper-button-next {
         width: 34px;
         height: 34px;
-
-        font-size: 24px;
     }
 
-    .popular-brands-next {
+    .popular-brands-swiper .swiper-button-prev {
+        right: 10px;
+    }
+
+    .popular-brands-swiper .swiper-button-next {
         left: 10px;
     }
 
-    .popular-brands-prev {
-        right: 10px;
+    .popular-brands-swiper .swiper-button-prev::after,
+    .popular-brands-swiper .swiper-button-next::after {
+        font-size: 12px !important;
+    }
+
+    .popular-brands-swiper .swiper-button-prev svg,
+    .popular-brands-swiper .swiper-button-next svg {
+        width: 12px !important;
+        height: 12px !important;
     }
 }

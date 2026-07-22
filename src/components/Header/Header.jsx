@@ -1,4 +1,5 @@
 import "./Header.css"
+import { Link } from "react-router-dom"
 import { categories } from "../../data/categories"
 import logoImage from "../../assets/images/full-horizontal.svg"
 import { GiGoldBar } from "react-icons/gi"
@@ -80,9 +81,9 @@ function Header() {
       >
         <div className="header-top">
           <div className="header-search-area">
-            <a className="logo" href="https://www.digikala.com/">
+            <Link className="logo" to="/">
               <img src={logoImage} alt="Digikala Logo" />
-            </a>
+            </Link>
 
             <div className={`search-wrapper ${isSearchOpen ? "search-wrapper-open" : ""}`}>
               <div className={`search-box ${isSearchFocused ? "search-box-focused" : ""}`}>
@@ -123,9 +124,11 @@ function Header() {
 
                     <div className="search-chips">
                       {recentSearches.map((item) => (
+                        <Link to="/search">
                         <button key={item} type="button" className="search-chip">
                           {item}
                         </button>
+                        </Link>
                       ))}
                     </div>
                   </div>

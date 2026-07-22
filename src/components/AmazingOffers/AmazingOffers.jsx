@@ -1,62 +1,30 @@
-import { useEffect, useRef, useState } from "react"
+import { useEffect, useState } from "react"
+import { Swiper, SwiperSlide } from "swiper/react"
+import { Navigation } from "swiper/modules"
+import "swiper/css"
+import "swiper/css/navigation"
 import "./AmazingOffers.css"
 import { amazingProducts } from "../../data/amazingoffers"
 
+
 function AmazingOffers() {
-  
-  const productsRef = useRef(null)
-
   const [timeLeft, setTimeLeft] = useState(3 * 60 * 60)
-  const [showNext, setShowNext] = useState(true)
-  const [showPrev, setShowPrev] = useState(false)
 
-  const titleImage = new URL("../../assets/images/Amazings.svg", import.meta.url).href
-  const boxImage = new URL("../../assets/images/Amazing01.svg", import.meta.url).href
+  const titleImage = new URL(
+    "../../assets/images/Amazings.svg",
+    import.meta.url
+  ).href
 
-  const getTime = () => {
-
-    const hours = Math.floor(timeLeft / 3600)
-    const minutes = Math.floor((timeLeft % 3600) / 60)
-    const seconds = timeLeft % 60
-
-    return {
-      hours: String(hours).padStart(2, "0"),
-      minutes: String(minutes).padStart(2, "0"),
-      seconds: String(seconds).padStart(2, "0"),
-    }
-  }
-
-  const checkButtons = () => {
-
-    const track = productsRef.current
-
-    const scrollPosition = Math.abs(track.scrollLeft)
-    const maxScroll = track.scrollWidth - track.clientWidth
-
-    setShowPrev(scrollPosition > 5)
-    setShowNext(scrollPosition < maxScroll - 5)
-  }
-
-  const goNext = () => {
-    productsRef.current.scrollLeft -= 500
-    setTimeout(checkButtons, 300)
-  }
-
-  const goPrev = () => {
-    productsRef.current.scrollLeft += 500
-    setTimeout(checkButtons, 300)
-  }
+  const boxImage = new URL(
+    "../../assets/images/Amazing01.svg",
+    import.meta.url
+  ).href
 
   useEffect(() => {
-
-    checkButtons()
-
     const timer = setInterval(() => {
-
-      setTimeLeft((prevTime) => {
-
-        if (prevTime > 0) {
-          return prevTime - 1
+      setTimeLeft((previousTime) => {
+        if (previousTime > 0) {
+          return previousTime - 1
         }
 
         return 0
@@ -66,15 +34,20 @@ function AmazingOffers() {
     return () => clearInterval(timer)
   }, [])
 
-  const time = getTime()
+  const hours = Math.floor(timeLeft / 3600)
+  const minutes = Math.floor((timeLeft % 3600) / 60)
+  const seconds = timeLeft % 60
+
+  const time = {
+    hours: String(hours).padStart(2, "0"),
+    minutes: String(minutes).padStart(2, "0"),
+    seconds: String(seconds).padStart(2, "0"),
+  }
 
   return (
     <section className="amazing-section">
-
       <div className="amazing-container">
-
         <div className="amazing-title-box">
-
           <img
             className="amazing-title-image"
             src={titleImage}
@@ -95,84 +68,79 @@ function AmazingOffers() {
             alt="شگفت انگیز"
           />
 
-          <button className="amazing-see-all" type="button">
+          <button
+            className="amazing-see-all"
+            type="button"
+          >
             مشاهده همه
             <span>›</span>
           </button>
-
         </div>
 
-        {showNext && (
-          <button
-            className="amazing-scroll-btn amazing-scroll-next"
-            type="button"
-            onClick={goNext}
-          >
-            ›
-          </button>
-        )}
-
-        <div
-          className="amazing-products"
-          ref={productsRef}
-          onScroll={checkButtons}
+        <Swiper
+          className="amazing-swiper"
+          dir="rtl"
+          modules={[Navigation]}
+          navigation
+          slidesPerView="auto"
+          slidesPerGroup={3}
+          spaceBetween={5}
+          speed={450}
+          loop={false}
+          rewind={false}
+          watchOverflow
+          grabCursor
         >
-
-          {amazingProducts.map((product) => (
-            <div className="amazing-card" key={product.id}>
-
-              <div className="amazing-image">
-                <img src={product.image} alt={product.title} />
-              </div>
-
-              <h3 className="amazing-product-title">
-                {product.title}
-              </h3>
-
-              <div className="amazing-price-row">
-
-                <span className="amazing-discount">
-                  {product.discount}٪
-                </span>
-
-                <div className="amazing-price">
-                  <span>{product.discountPrice}</span>
-                  <small>تومان</small>
+          {amazingProducts.map((product, index) => (
+            <SwiperSlide
+              className={
+                index === 0
+                  ? "amazing-slide amazing-first-slide"
+                  : "amazing-slide"
+              }
+              key={product.id}
+            >
+              <div className="amazing-card">
+                <div className="amazing-image">
+                  <img
+                    src={product.image}
+                    alt={product.title}
+                  />
                 </div>
 
-              </div>
+                <h3 className="amazing-product-title">
+                  {product.title}
+                </h3>
 
-              <div className="amazing-old-price">
-                {product.price}
-              </div>
+                <div className="amazing-price-row">
+                  <span className="amazing-discount">
+                    {product.discount}٪
+                  </span>
 
-            </div>
+                  <div className="amazing-price">
+                    <span>{product.discountPrice}</span>
+                    <small>تومان</small>
+                  </div>
+                </div>
+
+                <div className="amazing-old-price">
+                  {product.price}
+                </div>
+              </div>
+            </SwiperSlide>
           ))}
 
-          <div className="amazing-more-card">
+          <SwiperSlide className="amazing-slide amazing-more-slide">
+            <div className="amazing-more-card">
+              <div className="amazing-more-icon">
+                ›
+              </div>
 
-            <div className="amazing-more-icon">
-              ›
+              <p>مشاهده همه</p>
             </div>
-
-            <p>مشاهده همه</p>
-
-          </div>
-
-        </div>
-
-        {showPrev && (
-          <button
-            className="amazing-scroll-btn amazing-scroll-prev"
-            type="button"
-            onClick={goPrev}
-          >
-            ‹
-          </button>
-        )}
-
+          </SwiperSlide>
+        </Swiper>
       </div>
-
     </section>
   )
 }

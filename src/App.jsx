@@ -1,3 +1,10 @@
+import {
+  BrowserRouter,
+  Routes,
+  Route,
+  Navigate,
+} from "react-router-dom"
+
 import TopBanner from "./components/TopBanner/TopBanner"
 import Header from "./components/Header/Header"
 import Footer from "./components/Footer/Footer"
@@ -8,22 +15,28 @@ import Search from "./pages/Search"
 import Product from "./pages/Product"
 
 function App() {
-  const activePage = "product"
-
   return (
-    <>
+    <BrowserRouter>
       <TopBanner />
+
       <Header />
 
-      {activePage === "home" && <Home />}
+      <main>
+        <Routes>
+          <Route path="/" element={<Home />} />
 
-      {activePage === "search" && <Search />}
+          <Route path="/search" element={<Search />} />
 
-      {activePage === "product" && <Product />}
+          <Route path="/product" element={<Product />} />
+
+          <Route path="*" element={<Navigate to="/" replace />} />
+        </Routes>
+      </main>
 
       <Footer />
+
       <FloatingButtons />
-    </>
+    </BrowserRouter>
   )
 }
 

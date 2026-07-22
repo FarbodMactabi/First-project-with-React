@@ -1,108 +1,53 @@
-import { useEffect, useRef, useState } from "react"
 import "./PopularBrands.css"
+import { Swiper, SwiperSlide } from "swiper/react"
+import { Navigation } from "swiper/modules"
+import "swiper/css"
+import "swiper/css/navigation"
 import { popularBrands } from "../../data/popularBrands"
 
 function PopularBrands() {
-  
-  const brandsRef = useRef(null)
-
-  const [showNext, setShowNext] = useState(true)
-  const [showPrev, setShowPrev] = useState(false)
-
-  const checkButtons = () => {
-
-    const brandsList = brandsRef.current
-
-    const scrollPosition = Math.abs(brandsList.scrollLeft)
-    const maxScroll = brandsList.scrollWidth - brandsList.clientWidth
-
-    if (scrollPosition > 5) {
-      setShowPrev(true)
-    } 
-    
-    else {
-      setShowPrev(false)
-    }
-
-    if (scrollPosition < maxScroll - 5) {
-      setShowNext(true)
-    } 
-    
-    else {
-      setShowNext(false)
-    }
-  }
-
-  const goNext = () => {
-    brandsRef.current.scrollLeft -= 500
-
-    setTimeout(() => {
-      checkButtons()
-    }, 300)
-  }
-
-  const goPrev = () => {
-    brandsRef.current.scrollLeft += 500
-
-    setTimeout(() => {
-      checkButtons()
-    }, 300)
-  }
-
-  useEffect(() => {
-    checkButtons()
-  }, [])
-
   return (
     <section className="popular-brands-section">
-
       <div className="popular-brands-container">
-
         <h2 className="popular-brands-title">
           <span className="popular-brands-star">★</span>
           محبوب‌ترین برندها
         </h2>
 
-        <div className="popular-brands-wrapper">
-
-          {showNext && (
-            <button
-              className="popular-brands-btn popular-brands-next"
-              type="button"
-              onClick={goNext}
+        <Swiper
+          className="popular-brands-swiper"
+          dir="rtl"
+          modules={[Navigation]}
+          navigation={{
+            enabled: true,
+            disabledClass: "popular-brands-button-disabled",
+            lockClass: "popular-brands-button-lock",
+          }}
+          slidesPerView="auto"
+          slidesPerGroup={1}
+          spaceBetween={0}
+          speed={450}
+          loop={false}
+          rewind={false}
+          centeredSlides={false}
+          watchOverflow
+          grabCursor
+        >
+          {popularBrands.map((brand) => (
+            <SwiperSlide
+              className="popular-brand-slide"
+              key={brand.id}
             >
-              ›
-            </button>
-          )}
-
-          <div
-            className="popular-brands-list"
-            ref={brandsRef}
-            onScroll={checkButtons}
-          >
-
-            {popularBrands.map((brand) => (
-              <div className="popular-brand-card" key={brand.id}>
-                <img src={brand.image} alt="برند محبوب" />
+              <div className="popular-brand-card">
+                <img
+                  src={brand.image}
+                  alt={brand.title || "برند محبوب"}
+                />
               </div>
-            ))}
-
-          </div>
-
-          {showPrev && (
-            <button
-              className="popular-brands-btn popular-brands-prev"
-              type="button"
-              onClick={goPrev}
-            >
-              ‹
-            </button>
-          )}
-
-        </div>
-
+            </SwiperSlide>
+          ))}
+        </Swiper>
       </div>
-
     </section>
   )
 }

@@ -1,128 +1,90 @@
-import { useEffect, useRef, useState } from "react"
 import "./BestSellingProducts.css"
+import { Swiper, SwiperSlide } from "swiper/react"
+import { Navigation } from "swiper/modules"
+import "swiper/css"
+import "swiper/css/navigation"
 import { bestSellingProducts02 } from "../../data/bestSellingProducts"
 
-function BestSellingProducts() {
-  const listRef = useRef(null)
-
-  const [showNext, setShowNext] = useState(true)
-  const [showPrev, setShowPrev] = useState(false)
-
-  const checkButtons = () => {
-    const list = listRef.current
-
-    if (!list) {
-      return
-    }
-
-    const scrollPosition = Math.abs(list.scrollLeft)
-    const maxScroll = list.scrollWidth - list.clientWidth
-
-    if (scrollPosition > 5) {
-      setShowPrev(true)
-    } else {
-      setShowPrev(false)
-    }
-
-    if (scrollPosition < maxScroll - 5) {
-      setShowNext(true)
-    } else {
-      setShowNext(false)
-    }
-  }
-
-  const goNext = () => {
-    listRef.current.scrollLeft -= 500
-
-    setTimeout(() => {
-      checkButtons()
-    }, 300)
-  }
-
-  const goPrev = () => {
-    listRef.current.scrollLeft += 500
-
-    setTimeout(() => {
-      checkButtons()
-    }, 300)
-  }
-
-  useEffect(() => {
-    checkButtons()
-  }, [])
+function BestSellingProducts02() {
+  const productGroups = Array.from(
+    { length: Math.ceil(bestSellingProducts02.length / 3) },
+    (_, groupIndex) =>
+      bestSellingProducts02.slice(
+        groupIndex * 3,
+        groupIndex * 3 + 3
+      )
+  )
 
   return (
     <section className="best-selling-section">
-
       <div className="best-selling-container">
-
         <div className="best-selling-header">
-
           <h2 className="best-selling-title">
             <span className="best-selling-icon">🔥</span>
-            داغ ترین چند ساعت گذشته
+            داغ‌ترین چند ساعت گذشته
           </h2>
 
-          <button className="best-selling-see-all" type="button">
+          <button
+            className="best-selling-see-all"
+            type="button"
+          >
             مشاهده همه
           </button>
-
         </div>
 
-        <div className="best-selling-wrapper">
-
-          {showNext && (
-            <button
-              className="best-selling-btn best-selling-next"
-              type="button"
-              onClick={goNext}
+        <Swiper
+          className="best-selling-swiper"
+          dir="rtl"
+          modules={[Navigation]}
+          navigation={{
+            enabled: true,
+            disabledClass: "best-selling-button-disabled",
+            lockClass: "best-selling-button-lock",
+          }}
+          slidesPerView="auto"
+          slidesPerGroup={1}
+          spaceBetween={0}
+          speed={450}
+          loop={false}
+          rewind={false}
+          centeredSlides={false}
+          watchOverflow
+          grabCursor
+        >
+          {productGroups.map((group, groupIndex) => (
+            <SwiperSlide
+              className="best-selling-slide"
+              key={groupIndex}
             >
-              ›
-            </button>
-          )}
+              <div className="best-selling-column">
+                {group.map((product) => (
+                  <div
+                    className="best-selling-item"
+                    key={product.id}
+                  >
+                    <div className="best-selling-image">
+                      <img
+                        src={product.image}
+                        alt={product.title}
+                      />
+                    </div>
 
-          <div
-            className="best-selling-list"
-            ref={listRef}
-            onScroll={checkButtons}
-          >
+                    <span className="best-selling-rank">
+                      {product.id}
+                    </span>
 
-            {bestSellingProducts02.map((product) => (
-              <div className="best-selling-item" key={product.id}>
-
-                <div className="best-selling-image">
-                  <img src={product.image} alt={product.title} />
-                </div>
-
-                <span className="best-selling-rank">
-                  {product.id}
-                </span>
-
-                <p className="best-selling-name">
-                  <span>{product.title}</span>
-                </p>
-
+                    <p className="best-selling-name">
+                      <span>{product.title}</span>
+                    </p>
+                  </div>
+                ))}
               </div>
-            ))}
-
-          </div>
-
-          {showPrev && (
-            <button
-              className="best-selling-btn best-selling-prev"
-              type="button"
-              onClick={goPrev}
-            >
-              ‹
-            </button>
-          )}
-
-        </div>
-
+            </SwiperSlide>
+          ))}
+        </Swiper>
       </div>
-
     </section>
   )
 }
 
-export default BestSellingProducts
+export default BestSellingProducts02

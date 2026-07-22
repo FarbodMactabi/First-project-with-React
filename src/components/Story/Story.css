@@ -1,197 +1,197 @@
 .story-section {
-    position: relative;
+  width: 100%;
+  margin-top: 25px;
 
-    width: 100%;
-    height: 160px;
-    margin-top: 15px;
-    right: 75px;
+  background-color: #fff;
 
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    background-color: #fff;
-
-    direction: rtl;
-    overflow: hidden;
+  direction: rtl;
+  overflow: hidden;
 }
 
 .story-shell {
-    position: relative;
-    width: 1500px;
-    max-width: calc(100% - 150px);
-    height: 100%;
-
-    display: flex;
-    align-items: center;
+  width: min(1500px, calc(100% - 150px));
+  margin: 0 auto;
 }
 
-.story-window {
-    width: 100%;
-    max-width: calc(100% - 150px);
+.story-swiper {
+  width: 100%;
+  height: 160px;
 
-    overflow: hidden;
+  box-sizing: border-box;
+  padding: 14px 0 8px;
+
+  --swiper-navigation-color: #424750;
+  --swiper-navigation-size: 16px;
 }
 
-.story-track {
-    display: flex;
-    align-items: center;
-    gap: 20px;
+.story-swiper .swiper-wrapper {
+  align-items: center;
+}
 
-    overflow-x: auto;
-    overflow-y: hidden;
-
-    scroll-behavior: smooth;
-
-    padding: 14px 0 8px;
-
-    scrollbar-width: none;
+.story-slide {
+  width: 84px !important;
+  height: auto;
 }
 
 .story-card {
-    width: 84px;
-    min-width: 84px;
+  width: 84px;
 
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
-    text-align: center;
+  text-align: center;
 
-    cursor: pointer;
-    flex-shrink: 0;
+  cursor: pointer;
 }
 
 .story-ring {
-    width: 80px;
-    height: 80px;
+  width: 80px;
+  height: 80px;
 
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
-    padding: 2.5px;
+  box-sizing: border-box;
+  padding: 2.5px;
 
-    border: 2px solid #b83296;
-    border-radius: 50%;
+  border: 2px solid #b83296;
+  border-radius: 50%;
 
-    background-color: #fff;
+  background-color: #fff;
 }
 
 .story-image {
-    width: 74px;
-    height: 74px;
+  width: 74px;
+  height: 74px;
 
-    overflow: hidden;
+  overflow: hidden;
 
-    border-radius: 9999px;
-    background-color: #f0f0f1;
+  border-radius: 50%;
+  background-color: #f0f0f1;
 }
 
 .story-image img {
-    width: 100%;
-    height: 100%;
-    border-radius: 50%;
+  width: 100%;
+  height: 100%;
 
-    display: block;
+  display: block;
 
-    object-fit: cover;
+  border-radius: 50%;
+  object-fit: cover;
 }
 
 .story-title {
-    width: 82px;
-    min-height: 34px;
+  width: 82px;
+  min-height: 34px;
 
-    margin: 7px 0 0;
+  margin: 7px 0 0;
 
-    color: #23254e;
+  color: #23254e;
 
-    font-size: 11px;
-    font-weight: 500;
-    line-height: 1.55;
+  font-size: 11px;
+  font-weight: 500;
+  line-height: 1.55;
 
-    text-align: center;
+  text-align: center;
 
-    overflow: hidden;
+  overflow: hidden;
 }
 
-.story-nav {
-    position: absolute;
-    top: 53%;
+.story-swiper .swiper-button-prev,
+.story-swiper .swiper-button-next {
+  top: 50%;
 
-    width: 40px;
-    height: 40px;
+  width: 40px;
+  height: 40px;
 
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  margin-top: 0;
+  transform: translateY(-50%);
 
-    transform: translateY(-50%);
+  border: 1px solid #e0e0e2;
+  border-radius: 50%;
 
-    border: 1px solid #e0e0e2;
-    border-radius: 9999px;
+  background-color: #fff;
+  color: #424750;
 
-    background-color: #fff;
-    color: #424750;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
 
-    font-size: 24px;
-    line-height: 1;
-
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
-
-    z-index: 10;
-
-    cursor: pointer;
-    transition: 0.2s ease;
+  transition:
+    opacity 0.2s ease,
+    background-color 0.2s ease;
 }
 
-.story-nav:hover {
-    background-color: #f5f5f5;
+.story-swiper .swiper-button-prev {
+  right: 0;
+  left: auto;
 }
 
-.story-nav-next {
-    left: 170px;
+.story-swiper .swiper-button-next {
+  right: auto;
+  left: 0;
 }
 
-.story-nav-prev {
-    right: 40px;
+.story-swiper .swiper-button-prev:hover,
+.story-swiper .swiper-button-next:hover {
+  background-color: #f5f5f5;
+}
+
+.story-swiper .swiper-button-prev svg,
+.story-swiper .swiper-button-next svg {
+  width: 14px;
+  height: 14px;
+}
+
+.story-swiper .swiper-button-disabled {
+  opacity: 0 !important;
+  visibility: hidden !important;
+  pointer-events: none !important;
+}
+
+.story-swiper .swiper-button-lock {
+  display: none !important;
 }
 
 @media (max-width: 900px) {
-    .story-section {
-        height: 120px;
-    }
+  .story-shell {
+    width: calc(100% - 32px);
+  }
 
-    .story-window {
-        width: 1160px;
-        max-width: calc(100% - 100px);
-    }
+  .story-swiper {
+    height: 120px;
+  }
 
-    .story-card {
-        width: 82px;
-        min-width: 82px;
-    }
+  .story-slide,
+  .story-card {
+    width: 82px !important;
+  }
 
-    .story-ring {
-        width: 66px;
-        height: 66px;
-    }
+  .story-ring {
+    width: 66px;
+    height: 66px;
+  }
 
-    .story-image {
-        width: 56px;
-        height: 56px;
-    }
+  .story-image {
+    width: 56px;
+    height: 56px;
+  }
 
-    .story-title {
-        width: 74px;
-        font-size: 10px;
-    }
+  .story-title {
+    width: 74px;
 
-    .story-nav-next {
-        left: 24px;
-    }
+    font-size: 10px;
+  }
 
-    .story-nav-prev {
-        right: 24px;
-    }
+  .story-swiper .swiper-button-prev,
+  .story-swiper .swiper-button-next {
+    width: 34px;
+    height: 34px;
+  }
+
+  .story-swiper .swiper-button-prev svg,
+  .story-swiper .swiper-button-next svg {
+    width: 12px;
+    height: 12px;
+  }
 }

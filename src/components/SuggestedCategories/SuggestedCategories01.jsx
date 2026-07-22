@@ -1,4 +1,5 @@
 import "./SuggestedCategories.css"
+import {Link} from "react-router-dom"
 import { suggestedCategories01 } from "../../data/suggestedCategories"
 
 function SuggestedCategories() {
@@ -19,7 +20,9 @@ function SuggestedCategories() {
 
               {category.products.map((product) => (
                 <div className="suggested-product" key={product.id}>
+                 <Link to={product.url}>
                   <img src={product.image} alt={category.title} />
+                 </Link>
                 </div>
               ))}
 
@@ -29,7 +32,6 @@ function SuggestedCategories() {
               مشاهده
               <span>›</span>
             </button>
-
           </div>
         ))}
 
