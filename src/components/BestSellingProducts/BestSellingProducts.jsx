@@ -3,13 +3,12 @@ import { Swiper, SwiperSlide } from "swiper/react"
 import { Navigation } from "swiper/modules"
 import "swiper/css"
 import "swiper/css/navigation"
-import { bestSellingProducts01 } from "../../data/bestSellingProducts"
 
-function BestSellingProducts01() {
+function BestSellingProducts({ title, products }) {
   const productGroups = Array.from(
-    { length: Math.ceil(bestSellingProducts01.length / 3) },
+    { length: Math.ceil(products.length / 3) },
     (_, groupIndex) =>
-      bestSellingProducts01.slice(
+      products.slice(
         groupIndex * 3,
         groupIndex * 3 + 3
       )
@@ -21,7 +20,7 @@ function BestSellingProducts01() {
         <div className="best-selling-header">
           <h2 className="best-selling-title">
             <span className="best-selling-icon">🔥</span>
-            پرفروش‌ترین کالاها
+            {title}
           </h2>
 
           <button
@@ -87,4 +86,4 @@ function BestSellingProducts01() {
   )
 }
 
-export default BestSellingProducts01
+export default BestSellingProducts

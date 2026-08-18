@@ -1,14 +1,13 @@
 import "./SuggestedCategories.css"
 import {Link} from "react-router-dom"
-import { suggestedCategories01 } from "../../data/suggestedCategories"
 
-function SuggestedCategories() {
+function SuggestedCategories({suggestion}) {
   return (
     <section className="suggested-section">
 
       <div className="suggested-container">
 
-        {suggestedCategories01.map((category) => (
+        {suggestion.map((category) => (
           <div className="suggested-card" key={category.id}>
 
             <div className="suggested-header">

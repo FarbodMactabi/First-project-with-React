@@ -7,14 +7,12 @@ import SupermarketAmazing from "../components/SupermarketAmazing/SupermarketAmaz
 import ShopByCategory from "../components/ShopByCategory/ShopByCategory"
 import TwoAds from "../components/Ads/TwoAds"
 import PopularBrands from "../components/PopularBrands/PopularBrands"
-import SuggestedCategories01 from "../components/SuggestedCategories/SuggestedCategories01"
-import BestSellingProducts01 from "../components/BestSellingProducts/BestSellingProducts01"
-import SuggestedCategories02 from "../components/SuggestedCategories/SuggestedCategories02"
+import SuggestedCategories from "../components/SuggestedCategories/SuggestedCategories"
+import BestSellingProducts from "../components/BestSellingProducts/BestSellingProducts"
 import DiscountedProducts from "../components/DiscountedProducts/DiscountedProducts"
-import BestSellingProducts02 from "../components/BestSellingProducts/BestSellingProducts02"
 import ReadablePosts from "../components/ReadablePosts/ReadablePosts"
 
-import { fourAdsData01, fourAdsData02 , twoAdsData01 , twoAdsData02 } from "../data"
+import { fourAdsData01, fourAdsData02 , twoAdsData01 , twoAdsData02 , bestSellingProducts01, bestSellingProducts02, suggestedCategories01, suggestedCategories02 } from "../data"
 
 
 
@@ -32,11 +30,11 @@ function Home() {
       <TwoAds ads={twoAdsData01} />
       <PopularBrands />
       <TwoAds ads={twoAdsData02} />
-      <SuggestedCategories01 />
-      <BestSellingProducts01 />
-      <SuggestedCategories02 />
+      <SuggestedCategories suggestion={suggestedCategories01} />
+      <BestSellingProducts title="پرفروش‌ترین کالاها" products={bestSellingProducts01} />
+      <SuggestedCategories suggestion={suggestedCategories02} />
       <DiscountedProducts />
-      <BestSellingProducts02 />
+      <BestSellingProducts title="داغ‌ترین چند ساعت گذشته" products={bestSellingProducts02} />
       <ReadablePosts />
     </>
   )
