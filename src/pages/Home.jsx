@@ -12,7 +12,18 @@ import BestSellingProducts from "../components/BestSellingProducts/BestSellingPr
 import DiscountedProducts from "../components/DiscountedProducts/DiscountedProducts"
 import ReadablePosts from "../components/ReadablePosts/ReadablePosts"
 
-import { fourAdsData01, fourAdsData02 , twoAdsData01 , twoAdsData02 , bestSellingProducts01, bestSellingProducts02, suggestedCategories01, suggestedCategories02 } from "../data"
+import 
+        { 
+         fourAdsData01,
+         fourAdsData02, 
+         twoAdsData01, 
+         twoAdsData02, 
+         bestSellingProducts01, 
+         bestSellingProducts02, 
+         suggestedCategories01, 
+         suggestedCategories02 
+        } 
+        from "../data"
 
 
 
