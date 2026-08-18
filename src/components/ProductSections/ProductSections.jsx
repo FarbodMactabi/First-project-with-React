@@ -5,7 +5,6 @@ import {
   FiChevronLeft,
   FiEdit3,
   FiInfo,
-  FiMessageSquare,
   FiShield,
   FiShoppingCart,
   FiSliders,

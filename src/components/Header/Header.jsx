@@ -124,8 +124,8 @@ function Header() {
 
                     <div className="search-chips">
                       {recentSearches.map((item) => (
-                        <Link to="/search">
-                        <button key={item} type="button" className="search-chip">
+                        <Link key={item} to="/search">
+                        <button type="button" className="search-chip">
                           {item}
                         </button>
                         </Link>

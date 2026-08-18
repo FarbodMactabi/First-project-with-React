@@ -1,0 +1,1 @@
+export { fourAdsData01, fourAdsData02 , twoAdsData01 , twoAdsData02} from "./ads";

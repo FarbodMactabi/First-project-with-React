@@ -38,7 +38,7 @@ export const sortItems = [
   { id: 6, title: "گران‌ترین", value: "most-expensive" },
   { id: 7, title: "سریع‌ ترین ارسال", value: "fastest-delivery" },
   { id: 8, title: "پیشنهاد خریداران", value: "buyers-suggestion" },
-  { id: 8, title: "منتخب", value: "selected" },
+  { id: 9, title: "منتخب", value: "selected" },
 ]
 
 export const decorativePaginationItems = [

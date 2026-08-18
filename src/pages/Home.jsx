@@ -2,19 +2,19 @@ import Story from "../components/Story/Story"
 import Slider from "../components/Slider/Slider"
 import ShortcutMenu from "../components/ShortcutMenu/ShortcutMenu"
 import AmazingOffers from "../components/AmazingOffers/AmazingOffers"
-import FourAds01 from "../components/Ads/FourAds01"
+import FourAds from "../components/Ads/FourAds"
 import SupermarketAmazing from "../components/SupermarketAmazing/SupermarketAmazing"
-import FourAds02 from "../components/Ads/FourAds02"
 import ShopByCategory from "../components/ShopByCategory/ShopByCategory"
-import TwoAds01 from "../components/Ads/TwoAds01"
+import TwoAds from "../components/Ads/TwoAds"
 import PopularBrands from "../components/PopularBrands/PopularBrands"
-import TwoAds02 from "../components/Ads/TwoAds02"
 import SuggestedCategories01 from "../components/SuggestedCategories/SuggestedCategories01"
 import BestSellingProducts01 from "../components/BestSellingProducts/BestSellingProducts01"
 import SuggestedCategories02 from "../components/SuggestedCategories/SuggestedCategories02"
 import DiscountedProducts from "../components/DiscountedProducts/DiscountedProducts"
 import BestSellingProducts02 from "../components/BestSellingProducts/BestSellingProducts02"
 import ReadablePosts from "../components/ReadablePosts/ReadablePosts"
+
+import { fourAdsData01, fourAdsData02 , twoAdsData01 , twoAdsData02 } from "../data"
 
 
 
@@ -25,13 +25,13 @@ function Home() {
       <Slider />
       <ShortcutMenu />
       <AmazingOffers />
-      <FourAds01 />
+      <FourAds ads={fourAdsData01} />
       <SupermarketAmazing />
-      <FourAds02 />
+      <FourAds ads={fourAdsData02} />
       <ShopByCategory />
-      <TwoAds01 />
+      <TwoAds ads={twoAdsData01} />
       <PopularBrands />
-      <TwoAds02 />
+      <TwoAds ads={twoAdsData02} />
       <SuggestedCategories01 />
       <BestSellingProducts01 />
       <SuggestedCategories02 />

@@ -1,18 +1,8 @@
 import "./TwoAds.css"
 
-function TwoAds() {
-  const ads = [
-    {
-      id: 1,
-      image: new URL("../../assets/images/ad4-01.webp", import.meta.url).href,
-      alt: "تبلیغ اول",
-    },
-    {
-      id: 2,
-      image: new URL("../../assets/images/ad4-02.webp", import.meta.url).href,
-      alt: "تبلیغ دوم",
-    },
-  ]
+
+
+function TwoAds({ ads }) {
 
   return (
     <section className="two-ads-section">

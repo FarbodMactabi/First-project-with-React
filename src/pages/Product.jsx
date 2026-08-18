@@ -28,10 +28,10 @@ function Product() {
             <ProductBuyBox />
           </div>
         </section>
-        <ProductServices />
-        <ProductSellers />
-        <ProductSimilarProducts />
-        <ProductSections />
+            <ProductServices />
+            <ProductSellers />
+            <ProductSimilarProducts />
+            <ProductSections />
       </div>
     </main>
   )
