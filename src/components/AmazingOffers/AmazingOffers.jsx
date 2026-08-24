@@ -4,7 +4,7 @@ import { Navigation } from "swiper/modules"
 import "swiper/css"
 import "swiper/css/navigation"
 import "./AmazingOffers.css"
-import { amazingProducts } from "../../data/amazingoffers"
+import { amazingProducts } from "../../data"
 
 
 function AmazingOffers() {

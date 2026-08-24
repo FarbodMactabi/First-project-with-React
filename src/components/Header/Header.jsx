@@ -1,6 +1,6 @@
 import "./Header.css"
 import { Link } from "react-router-dom"
-import { categories } from "../../data/categories"
+import { categories } from "../../data"
 import logoImage from "../../assets/images/full-horizontal.svg"
 import { GiGoldBar } from "react-icons/gi"
 import { BsBasket3, BsFire } from "react-icons/bs"

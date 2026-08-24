@@ -9,11 +9,7 @@ import {
   FiInfo,
 } from "react-icons/fi"
 
-import {
-  productGalleryActions,
-  productGalleryImages,
-  productGalleryMoreThumbnail,
-} from "../../data/productDetails"
+import { productGalleryActions, productGalleryImages, productGalleryMoreThumbnail } from "../../data"
 
 function ProductGallery() {
   const galleryIconMap = {

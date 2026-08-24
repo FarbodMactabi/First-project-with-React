@@ -1,7 +1,7 @@
 import { useState } from "react"
 import "./Footer.css"
 
-import { contactItems, services, linkColumns, socials, appDownloads, trustBadges, bottomBrands } from "../../data/footer"
+import { contactItems, services, linkColumns, socials, appDownloads, trustBadges, bottomBrands } from "../../data"
 
 function Footer() {
 

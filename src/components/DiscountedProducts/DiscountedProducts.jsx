@@ -1,5 +1,5 @@
 import "./DiscountedProducts.css"
-import { discountedProducts } from "../../data/discountedProducts"
+import { discountedProducts } from "../../data"
 
 function DiscountedProducts() {
   return (

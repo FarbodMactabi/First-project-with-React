@@ -1,15 +1,7 @@
 import "./ProductSellers.css"
-import {
-  FiShield,
-  FiTruck,
-  FiUser,
-} from "react-icons/fi"
+import { FiShield, FiTruck, FiUser } from "react-icons/fi"
 import { PiStarFour, PiStorefront } from "react-icons/pi"
-
-import {
-  productSellersData,
-  productSellersSectionData,
-} from "../../data/productDetails"
+import { productSellersData, productSellersSectionData } from "../../data"
 
 function ProductSellers() {
   const sellerIconMap = {

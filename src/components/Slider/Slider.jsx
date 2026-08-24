@@ -11,7 +11,7 @@ import "swiper/css"
 import "swiper/css/navigation"
 import "swiper/css/pagination"
 
-import { slides } from "../../data/slider"
+import { slides } from "../../data"
 
 function Slider() {
   return (

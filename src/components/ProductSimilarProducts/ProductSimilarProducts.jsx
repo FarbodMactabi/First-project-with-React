@@ -4,10 +4,7 @@ import { Navigation } from "swiper/modules"
 import "swiper/css"
 import "swiper/css/navigation"
 import { FiTruck } from "react-icons/fi"
-import {
-  productSimilarProductsData,
-  productSimilarSectionData,
-} from "../../data/productDetails"
+import { productSimilarProductsData, productSimilarSectionData } from "../../data"
 
 function ProductSimilarProducts() {
   return (

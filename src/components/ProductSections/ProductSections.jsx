@@ -1,24 +1,8 @@
 import "./ProductSections.css"
 import { useEffect, useRef, useState } from "react"
 import { AiFillStar } from "react-icons/ai"
-import {
-  FiChevronLeft,
-  FiEdit3,
-  FiInfo,
-  FiShield,
-  FiShoppingCart,
-  FiSliders,
-  FiThumbsDown,
-  FiThumbsUp,
-} from "react-icons/fi"
-
-import {
-  productDetailTabs,
-  productQuestionsData,
-  productReviewsData,
-  productSpecificationsData,
-  productStickyBuyData,
-} from "../../data/productDetails"
+import { FiChevronLeft, FiEdit3, FiInfo, FiShield, FiShoppingCart, FiSliders, FiThumbsDown, FiThumbsUp } from "react-icons/fi"
+import { productDetailTabs, productQuestionsData, productReviewsData, productSpecificationsData, productStickyBuyData } from "../../data"
 
 function ProductSections() {
   const sectionRefs = useRef({})

@@ -8,7 +8,7 @@ import {
   FiX,
 } from "react-icons/fi"
 
-import { searchFilters } from "../../data/searchFilters"
+import { searchFilters } from "../../data"
 
 function SearchFilters() {
 

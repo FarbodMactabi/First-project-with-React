@@ -10,13 +10,7 @@ import {
 } from "react-icons/md"
 import { PiStarFour } from "react-icons/pi"
 
-import {
-  productBuyBoxData,
-  productBuyBoxFooterData,
-  productBuyBoxPlusData,
-  productBuyBoxSellerInfoItems,
-  productBuyBoxShippingItems,
-} from "../../data/productDetails"
+import { productBuyBoxData, productBuyBoxFooterData, productBuyBoxPlusData, productBuyBoxSellerInfoItems, productBuyBoxShippingItems } from "../../data"
 
 function ProductBuyBox() {
   const shippingIconMap = {

@@ -1,6 +1,6 @@
 import "./ProductServices.css"
 
-import { productServicesData } from "../../data/productDetails"
+import { productServicesData } from "../../data"
 
 function ProductServices() {
   return (

@@ -1,5 +1,5 @@
 import "./ShortcutMenu.css"
-import { shortcuts } from "../../data/shortcuts"
+import { shortcuts } from "../../data"
 
 function ShortcutMenu() {
   return (
