@@ -1,13 +1,13 @@
-import "./Product.css"
+import "../styles/Product.css"
 
-import ProductBreadcrumb from "../components/ProductBreadcrumb/ProductBreadcrumb"
-import ProductGallery from "../components/ProductGallery/ProductGallery"
-import ProductInfo from "../components/ProductInfo/ProductInfo"
-import ProductBuyBox from "../components/ProductBuyBox/ProductBuyBox"
-import ProductServices from "../components/ProductServices/ProductServices"
-import ProductSellers from "../components/ProductSellers/ProductSellers"
-import ProductSimilarProducts from "../components/ProductSimilarProducts/ProductSimilarProducts"
-import ProductSections from "../components/ProductSections/ProductSections"
+import ProductBreadcrumb from "../components/ProductBreadcrumb"
+import ProductGallery from "../components/ProductGallery"
+import ProductInfo from "../components/ProductInfo"
+import ProductBuyBox from "../components/ProductBuyBox"
+import ProductServices from "../components/ProductServices"
+import ProductSellers from "../components/ProductSellers"
+import ProductSimilarProducts from "../components/ProductSimilarProducts"
+import ProductSections from "../components/ProductSections"
 
 function Product() {
   return (

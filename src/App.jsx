@@ -5,10 +5,10 @@ import {
   Navigate,
 } from "react-router-dom"
 
-import TopBanner from "./components/TopBanner/TopBanner"
-import Header from "./components/Header/Header"
-import Footer from "./components/Footer/Footer"
-import FloatingButtons from "./components/FloatingButtons/FloatingButtons"
+import TopBanner from "./components/TopBanner"
+import Header from "./components/Header"
+import Footer from "./components/Footer"
+import FloatingButtons from "./components/FloatingButtons"
 
 import Home from "./pages/Home"
 import Search from "./pages/Search"
