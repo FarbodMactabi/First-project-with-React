@@ -1,4 +1,4 @@
-import "../../styles/FourAds.css";
+import "@/styles/FourAds.css";
 
 function FourAds({ ads }) {
   return (

@@ -1,5 +1,5 @@
-import "../../styles/ShopByCategory.css"
-import { shopCategories } from "../../data"
+import "@/styles/ShopByCategory.css"
+import { shopCategories } from "@/data"
 
 function ShopByCategory() {
   return (

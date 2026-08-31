@@ -1,9 +1,9 @@
-import "../../styles/Story.css"
+import "@/styles/Story.css"
 import { Swiper, SwiperSlide } from "swiper/react"
 import { Navigation } from "swiper/modules"
 import "swiper/css"
 import "swiper/css/navigation"
-import { stories } from "../../data"
+import { stories } from "@/data"
 
 
 function Story() {

@@ -1,34 +1,34 @@
 export const productGalleryImages = [
   {
     id: 1,
-    image: new URL("../assets/images/productgallery-01.webp", import.meta.url).href,
+    image: new URL("@/assets/images/productgallery-01.webp", import.meta.url).href,
     alt: "گوشی موبایل آنر مدل X9d رنگ قرمز",
   },
   {
     id: 2,
-    image: new URL("../assets/images/productgallery-02.webp", import.meta.url).href,
+    image: new URL("@/assets/images/productgallery-02.webp", import.meta.url).href,
     alt: "نمای پشت گوشی آنر X9d رنگ قرمز",
   },
   {
     id: 3,
-    image: new URL("../assets/images/productgallery-03.webp", import.meta.url).href,
+    image: new URL("@/assets/images/productgallery-03.webp", import.meta.url).href,
     alt: "گوشی آنر X9d رنگ مشکی",
   },
   {
     id: 4,
-    image: new URL("../assets/images/productgallery-04.webp", import.meta.url).href,
+    image: new URL("@/assets/images/productgallery-04.webp", import.meta.url).href,
     alt: "گوشی آنر X9d رنگ کرم",
   },
   {
     id: 5,
-    image: new URL("../assets/images/productgallery-05.webp", import.meta.url).href,
+    image: new URL("@/assets/images/productgallery-05.webp", import.meta.url).href,
     alt: "گوشی آنر X9d رنگ سبز",
   },
 ]
 
 export const productGalleryMoreThumbnail = {
   id: "more",
-  image: new URL("../assets/images/productgallery-06.webp", import.meta.url).href,
+  image: new URL("@/assets/images/productgallery-06.webp", import.meta.url).href,
   alt: "مشاهده تصاویر بیشتر",
 }
 
@@ -132,7 +132,7 @@ export const productColors = [
 
 export const deliveryBoxData = {
   text: "تحویل امروز با ارسال سریع دیجی‌کالا",
-  image: new URL("../assets/images/fastsend.png", import.meta.url).href,
+  image: new URL("@/assets/images/fastsend.png", import.meta.url).href,
   imageAlt: "ارسال سریع دیجی‌کالا",
 }
 
@@ -173,7 +173,7 @@ export const returnPolicyData = {
 
 export const plusBoxData = {
   title: "ارسال رایگان سفارش‌ها برای اعضای پلاس",
-  image: new URL("../assets/images/free-delivery.svg", import.meta.url).href,
+  image: new URL("@/assets/images/free-delivery.svg", import.meta.url).href,
   items: [
     "۴ ارسال رایگان دیجیکالا",
     "۲ ارسال سوپرمارکت",
@@ -195,7 +195,7 @@ export const productBuyBoxData = {
   otherSellers: "۳ فروشنده دیگر",
 
   sellerName: "دیجی‌کالا",
-  sellerLogo: new URL("../assets/images/footerlogo2.webp", import.meta.url).href,
+  sellerLogo: new URL("@/assets/images/footerlogo2.webp", import.meta.url).href,
   sellerLogoAlt: "لوگوی فروشنده",
 
   sellerRate: "۱۰۰٪ رضایت از کالا",
@@ -214,7 +214,7 @@ export const productBuyBoxData = {
     "گارانتی ۱۸ ماهه مدیا پردازش + بیمه ۱۲ ماهه سرقت، شکستگی و آب خوردگی",
 
   clubPoint: "۱۵۰ امتیاز دیجی‌کلاب",
-  clubLogo: new URL("../assets/images/club-point.svg", import.meta.url).href,
+  clubLogo: new URL("@/assets/images/club-point.svg", import.meta.url).href,
   clubLogoAlt: "لوگوی دیجی‌کلاب",
 }
 
@@ -264,31 +264,31 @@ export const productServicesData = [
   {
     id: 1,
     title: "امکان تحویل اکسپرس",
-    image: new URL("../assets/images/express-delivery.svg", import.meta.url).href,
+    image: new URL("@/assets/images/express-delivery.svg", import.meta.url).href,
     imageAlt: "تحویل اکسپرس",
   },
   {
     id: 2,
     title: "۲۴ ساعته، ۷ روز هفته",
-    image: new URL("../assets/images/support.svg", import.meta.url).href,
+    image: new URL("@/assets/images/support.svg", import.meta.url).href,
     imageAlt: "پشتیبانی ۲۴ ساعته",
   },
   {
     id: 3,
     title: "امکان پرداخت در محل",
-    image: new URL("../assets/images/cash-on-delivery.svg", import.meta.url).href,
+    image: new URL("@/assets/images/cash-on-delivery.svg", import.meta.url).href,
     imageAlt: "پرداخت در محل",
   },
   {
     id: 4,
     title: "هفت روز ضمانت بازگشت کالا",
-    image: new URL("../assets/images/days-return.svg", import.meta.url).href,
+    image: new URL("@/assets/images/days-return.svg", import.meta.url).href,
     imageAlt: "ضمانت بازگشت کالا",
   },
   {
     id: 5,
     title: "ضمانت اصل بودن کالا",
-    image: new URL("../assets/images/original-products.svg", import.meta.url).href,
+    image: new URL("@/assets/images/original-products.svg", import.meta.url).href,
     imageAlt: "ضمانت اصل بودن کالا",
   },
 ]
@@ -303,7 +303,7 @@ export const productSellersData = [
     seller: {
       name: "دیجی‌کالا",
       logoType: "image",
-      logo: new URL("../assets/images/footerlogo2.webp", import.meta.url).href,
+      logo: new URL("@/assets/images/footerlogo2.webp", import.meta.url).href,
       logoAlt: "لوگوی دیجی‌کالا",
       rate: "۹۳.۴٪ رضایت از کالا",
       performance: "عملکرد عالی",
@@ -444,7 +444,7 @@ export const productSimilarProductsData = [
   {
     id: 1,
     title: "گوشی موبایل سامسونگ مدل Galaxy S26 Ultra دو سیم‌کارت ظرفیت 256 گیگابایت و رم 12 گیگابایت - ویتنام",
-    image: new URL("../assets/images/searchproduct-01.webp", import.meta.url).href,
+    image: new URL("@/assets/images/searchproduct-01.webp", import.meta.url).href,
     badgeType: "amazing",
     rating: "۴.۵",
     statusType: "digikala-fast",
@@ -456,7 +456,7 @@ export const productSimilarProductsData = [
   {
     id: 2,
     title: "گوشی موبایل وکال مدل V2 Pro 5G دو سیم‌کارت ظرفیت 128 گیگابایت و رم 4 گیگابایت  ",
-    image: new URL("../assets/images/searchproduct-02.webp", import.meta.url).href,
+    image: new URL("@/assets/images/searchproduct-02.webp", import.meta.url).href,
     badgeType: null,
     rating: "۳.۴",
     statusType: "last-one",
@@ -468,7 +468,7 @@ export const productSimilarProductsData = [
   {
     id: 3,
     title: "گوشی موبایل شیائومی مدل Redmi 15 4G دو سیم کارت ظرفیت 256 گیگابایت و رم 8 گیگابایت ",
-    image: new URL("../assets/images/searchproduct-03.webp", import.meta.url).href,
+    image: new URL("@/assets/images/searchproduct-03.webp", import.meta.url).href,
     badgeType: "special",
     rating: "۴.۴",
     statusType: "seller-3h",
@@ -480,7 +480,7 @@ export const productSimilarProductsData = [
   {
     id: 4,
     title: "گوشی موبایل ریلمی مدل Plus 12 ظرفیت 512 گیگابایت و رم 12 گیگابایت",
-    image: new URL("../assets/images/searchproduct-04.webp", import.meta.url).href,
+    image: new URL("@/assets/images/searchproduct-04.webp", import.meta.url).href,
     badgeType: "amazing",
     rating: "۴.۵",
     statusType: "last-one",
@@ -492,7 +492,7 @@ export const productSimilarProductsData = [
   {
     id: 5,
     title: "گوشی موبایل شیائومی مدل Redmi Note 14s دو سیم کارت ظرفیت 512 گیگابایت و رم 12 گیگابایت",
-    image: new URL("../assets/images/searchproduct-05.webp", import.meta.url).href,
+    image: new URL("@/assets/images/searchproduct-05.webp", import.meta.url).href,
     badgeType: "special",
     rating: "۴.۴",
     statusType: "digikala-fast",
@@ -504,7 +504,7 @@ export const productSimilarProductsData = [
   {
     id: 6,
     title: "گوشی موبایل هانوفر مدل V5 Pro دو سیم کارت ظرفیت 32 مگابایت و رم 32 مگابایت",
-    image: new URL("../assets/images/searchproduct-06.webp", import.meta.url).href,
+    image: new URL("@/assets/images/searchproduct-06.webp", import.meta.url).href,
     badgeType: null,
     rating: "۳.۳",
     statusType: "seller-3h",
@@ -516,7 +516,7 @@ export const productSimilarProductsData = [
   {
     id: 7,
     title: "گوشی موبایل سامسونگ مدل Galaxy S25 Ultra دو سیم کارت ظرفیت 512 گیگابایت و رم 12 گیگابایت - پک ویتنام",
-    image: new URL("../assets/images/searchproduct-07.webp", import.meta.url).href,
+    image: new URL("@/assets/images/searchproduct-07.webp", import.meta.url).href,
     badgeType: "special",
     rating: "۴.۶",
     statusType: "last-one",
@@ -528,7 +528,7 @@ export const productSimilarProductsData = [
   {
     id: 8,
     title: "گوشی موبایل سامسونگ مدل Galaxy A36 دو سیم کارت ظرفیت 256 گیگابایت و رم 8 گیگابایت - ویتنام",
-    image: new URL("../assets/images/searchproduct-08.webp", import.meta.url).href,
+    image: new URL("@/assets/images/searchproduct-08.webp", import.meta.url).href,
     badgeType: null,
     rating: "۴.۵",
     statusType: "digikala-fast",
@@ -540,7 +540,7 @@ export const productSimilarProductsData = [
   {
     id: 9,
     title: "گوشی موبایل ریلمی مدل C71 دو سیم کارت ظرفیت 256 گیگابایت و رم 8 گیگابایت",
-    image: new URL("../assets/images/searchproduct-09.webp", import.meta.url).href,
+    image: new URL("@/assets/images/searchproduct-09.webp", import.meta.url).href,
     badgeType: "amazing",
     rating: "۴.۳",
     statusType: "seller-3h",
@@ -552,7 +552,7 @@ export const productSimilarProductsData = [
   {
     id: 10,
     title: "گوشی موبایل سامسونگ مدل Galaxy S26 Ultra دو سیم‌کارت ظرفیت 256 گیگابایت و رم 12 گیگابایت - ویتنام",
-    image: new URL("../assets/images/searchproduct-01.webp", import.meta.url).href,
+    image: new URL("@/assets/images/searchproduct-01.webp", import.meta.url).href,
     badgeType: "amazing",
     rating: "۴.۵",
     statusType: "digikala-fast",
@@ -564,7 +564,7 @@ export const productSimilarProductsData = [
   {
     id: 11,
     title: "گوشی موبایل وکال مدل V2 Pro 5G دو سیم‌کارت ظرفیت 128 گیگابایت و رم 4 گیگابایت  ",
-    image: new URL("../assets/images/searchproduct-02.webp", import.meta.url).href,
+    image: new URL("@/assets/images/searchproduct-02.webp", import.meta.url).href,
     badgeType: null,
     rating: "۳.۴",
     statusType: "last-one",
@@ -576,7 +576,7 @@ export const productSimilarProductsData = [
   {
     id: 12,
     title: "گوشی موبایل شیائومی مدل Redmi 15 4G دو سیم کارت ظرفیت 256 گیگابایت و رم 8 گیگابایت ",
-    image: new URL("../assets/images/searchproduct-03.webp", import.meta.url).href,
+    image: new URL("@/assets/images/searchproduct-03.webp", import.meta.url).href,
     badgeType: "special",
     rating: "۴.۴",
     statusType: "seller-3h",
@@ -588,7 +588,7 @@ export const productSimilarProductsData = [
   {
     id: 13,
     title: "گوشی موبایل ریلمی مدل Plus 12 ظرفیت 512 گیگابایت و رم 12 گیگابایت",
-    image: new URL("../assets/images/searchproduct-04.webp", import.meta.url).href,
+    image: new URL("@/assets/images/searchproduct-04.webp", import.meta.url).href,
     badgeType: "amazing",
     rating: "۴.۵",
     statusType: "last-one",
@@ -600,7 +600,7 @@ export const productSimilarProductsData = [
   {
     id: 14,
     title: "گوشی موبایل شیائومی مدل Redmi Note 14s دو سیم کارت ظرفیت 512 گیگابایت و رم 12 گیگابایت",
-    image: new URL("../assets/images/searchproduct-05.webp", import.meta.url).href,
+    image: new URL("@/assets/images/searchproduct-05.webp", import.meta.url).href,
     badgeType: "special",
     rating: "۴.۴",
     statusType: "digikala-fast",
@@ -612,7 +612,7 @@ export const productSimilarProductsData = [
   {
     id: 15,
     title: "گوشی موبایل هانوفر مدل V5 Pro دو سیم کارت ظرفیت 32 مگابایت و رم 32 مگابایت",
-    image: new URL("../assets/images/searchproduct-06.webp", import.meta.url).href,
+    image: new URL("@/assets/images/searchproduct-06.webp", import.meta.url).href,
     badgeType: null,
     rating: "۳.۳",
     statusType: "seller-3h",
@@ -624,7 +624,7 @@ export const productSimilarProductsData = [
   {
     id: 16,
     title: "گوشی موبایل سامسونگ مدل Galaxy S25 Ultra دو سیم کارت ظرفیت 512 گیگابایت و رم 12 گیگابایت - پک ویتنام",
-    image: new URL("../assets/images/searchproduct-07.webp", import.meta.url).href,
+    image: new URL("@/assets/images/searchproduct-07.webp", import.meta.url).href,
     badgeType: "special",
     rating: "۴.۶",
     statusType: "last-one",
@@ -636,7 +636,7 @@ export const productSimilarProductsData = [
   {
     id: 17,
     title: "گوشی موبایل سامسونگ مدل Galaxy A36 دو سیم کارت ظرفیت 256 گیگابایت و رم 8 گیگابایت - ویتنام",
-    image: new URL("../assets/images/searchproduct-08.webp", import.meta.url).href,
+    image: new URL("@/assets/images/searchproduct-08.webp", import.meta.url).href,
     badgeType: null,
     rating: "۴.۵",
     statusType: "digikala-fast",
@@ -648,7 +648,7 @@ export const productSimilarProductsData = [
   {
     id: 18,
     title: "گوشی موبایل ریلمی مدل C71 دو سیم کارت ظرفیت 256 گیگابایت و رم 8 گیگابایت",
-    image: new URL("../assets/images/searchproduct-09.webp", import.meta.url).href,
+    image: new URL("@/assets/images/searchproduct-09.webp", import.meta.url).href,
     badgeType: "amazing",
     rating: "۴.۳",
     statusType: "seller-3h",
@@ -668,9 +668,9 @@ export const productStickyBuyData = {
   badge: "فروش ویژه",
   title:
     "گوشی موبایل آنر مدل X9d دو سیم کارت ظرفیت 256 گیگابایت و رم 12 گیگابایت",
-  image: new URL("../assets/images/productgallery-01.webp", import.meta.url).href,
+  image: new URL("@/assets/images/productgallery-01.webp", import.meta.url).href,
   imageAlt: "گوشی آنر X9d",
-  imageSeller: new URL("../assets/images/footerlogo2.webp", import.meta.url).href,
+  imageSeller: new URL("@/assets/images/footerlogo2.webp", import.meta.url).href,
   imageSellerAlt: "گوشی آنر X9d",
   colorTitle: "طلایی",
   colorCode: "#d0aa2b",
@@ -713,12 +713,12 @@ export const productReviewsData = {
   buttonText: "ثبت دیدگاه",
   imageMoreText: "مشاهده همه",
   images: [
-    { id: 1,   image: new URL("../assets/images/productreview-01.webp", import.meta.url).href, alt: "تصویر دیدگاه ۱" },
-    { id: 2,   image: new URL("../assets/images/productreview-02.webp", import.meta.url).href, alt: "تصویر دیدگاه ۲" },
-    { id: 3,   image: new URL("../assets/images/productreview-03.webp", import.meta.url).href, alt: "تصویر دیدگاه ۳" },
-    { id: 4,   image: new URL("../assets/images/productreview-04.webp", import.meta.url).href, alt: "تصویر دیدگاه ۴" },
-    { id: 5,   image: new URL("../assets/images/productreview-05.webp", import.meta.url).href, alt: "تصویر دیدگاه ۵" },
-    { id: 6,   image: new URL("../assets/images/productreview-06.webp", import.meta.url).href, alt: "تصویر دیدگاه ۶" },
+    { id: 1,   image: new URL("@/assets/images/productreview-01.webp", import.meta.url).href, alt: "تصویر دیدگاه ۱" },
+    { id: 2,   image: new URL("@/assets/images/productreview-02.webp", import.meta.url).href, alt: "تصویر دیدگاه ۲" },
+    { id: 3,   image: new URL("@/assets/images/productreview-03.webp", import.meta.url).href, alt: "تصویر دیدگاه ۳" },
+    { id: 4,   image: new URL("@/assets/images/productreview-04.webp", import.meta.url).href, alt: "تصویر دیدگاه ۴" },
+    { id: 5,   image: new URL("@/assets/images/productreview-05.webp", import.meta.url).href, alt: "تصویر دیدگاه ۵" },
+    { id: 6,   image: new URL("@/assets/images/productreview-06.webp", import.meta.url).href, alt: "تصویر دیدگاه ۶" },
   ],
   summary: {
     title: "خلاصه دیدگاه‌های خریدارها",

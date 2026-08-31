@@ -3,20 +3,20 @@ import { Swiper, SwiperSlide } from "swiper/react"
 import { Navigation } from "swiper/modules"
 import "swiper/css"
 import "swiper/css/navigation"
-import "../../styles/AmazingOffers.css"
-import { amazingProducts } from "../../data"
+import "@/styles/AmazingOffers.css"
+import { amazingProducts } from "@/data"
 
 
 function AmazingOffers() {
   const [timeLeft, setTimeLeft] = useState(3 * 60 * 60)
 
   const titleImage = new URL(
-    "../../assets/images/Amazings.svg",
+    "@/assets/images/Amazings.svg",
     import.meta.url
   ).href
 
   const boxImage = new URL(
-    "../../assets/images/Amazing01.svg",
+    "@/assets/images/Amazing01.svg",
     import.meta.url
   ).href
 

@@ -1,6 +1,6 @@
-import "../../styles/ProductServices.css"
+import "@/styles/ProductServices.css"
 
-import { productServicesData } from "../../data"
+import { productServicesData } from "@/data"
 
 function ProductServices() {
   return (

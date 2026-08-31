@@ -1,8 +1,8 @@
-const amazingBadgeImage = new URL("../assets/images/IncredibleOffer.svg", import.meta.url).href
-const specialBadgeImage = new URL("../assets/images/SpecialSell.svg", import.meta.url).href
+const amazingBadgeImage = new URL("@/assets/images/IncredibleOffer.svg", import.meta.url).href
+const specialBadgeImage = new URL("@/assets/images/SpecialSell.svg", import.meta.url).href
 
-const digikalaFastIcon = new URL("../assets/images/fastsend.png", import.meta.url).href
-const seller3hIcon = new URL("../assets/images/Rocket.svg", import.meta.url).href
+const digikalaFastIcon = new URL("@/assets/images/fastsend.png", import.meta.url).href
+const seller3hIcon = new URL("@/assets/images/Rocket.svg", import.meta.url).href
 
 export const badgeMap = {
   amazing: amazingBadgeImage,
@@ -63,7 +63,7 @@ export const decorativePaginationItems = [
   {
     id: 4,
     type: "dot",
-    title: "...",
+    title: "@.",
     active: false,
   },
   {
@@ -78,7 +78,7 @@ export const searchProducts = [
   {
     id: 1,
     title: "گوشی موبایل سامسونگ مدل Galaxy S26 Ultra دو سیم‌کارت ظرفیت 256 گیگابایت و رم 12 گیگابایت - ویتنام",
-    image: new URL("../assets/images/searchproduct-01.webp", import.meta.url).href,
+    image: new URL("@/assets/images/searchproduct-01.webp", import.meta.url).href,
     badgeType: "amazing",
     rating: "۴.۵",
     statusType: "digikala-fast",
@@ -91,7 +91,7 @@ export const searchProducts = [
   {
     id: 2,
     title: "گوشی موبایل وکال مدل V2 Pro 5G دو سیم‌کارت ظرفیت 128 گیگابایت و رم 4 گیگابایت  ",
-    image: new URL("../assets/images/searchproduct-02.webp", import.meta.url).href,
+    image: new URL("@/assets/images/searchproduct-02.webp", import.meta.url).href,
     badgeType: null,
     rating: "۳.۴",
     statusType: "last-one",
@@ -104,7 +104,7 @@ export const searchProducts = [
   {
     id: 3,
     title: "گوشی موبایل شیائومی مدل Redmi 15 4G دو سیم کارت ظرفیت 256 گیگابایت و رم 8 گیگابایت ",
-    image: new URL("../assets/images/searchproduct-03.webp", import.meta.url).href,
+    image: new URL("@/assets/images/searchproduct-03.webp", import.meta.url).href,
     badgeType: "special",
     rating: "۴.۴",
     statusType: "seller-3h",
@@ -117,7 +117,7 @@ export const searchProducts = [
   {
     id: 4,
     title: "گوشی موبایل ریلمی مدل Plus 12 ظرفیت 512 گیگابایت و رم 12 گیگابایت",
-    image: new URL("../assets/images/searchproduct-04.webp", import.meta.url).href,
+    image: new URL("@/assets/images/searchproduct-04.webp", import.meta.url).href,
     badgeType: "amazing",
     rating: "۴.۵",
     statusType: "last-one",
@@ -130,7 +130,7 @@ export const searchProducts = [
   {
     id: 5,
     title: "گوشی موبایل شیائومی مدل Redmi Note 14s دو سیم کارت ظرفیت 512 گیگابایت و رم 12 گیگابایت",
-    image: new URL("../assets/images/searchproduct-05.webp", import.meta.url).href,
+    image: new URL("@/assets/images/searchproduct-05.webp", import.meta.url).href,
     badgeType: "special",
     rating: "۴.۴",
     statusType: "digikala-fast",
@@ -143,7 +143,7 @@ export const searchProducts = [
   {
     id: 6,
     title: "گوشی موبایل هانوفر مدل V5 Pro دو سیم کارت ظرفیت 32 مگابایت و رم 32 مگابایت",
-    image: new URL("../assets/images/searchproduct-06.webp", import.meta.url).href,
+    image: new URL("@/assets/images/searchproduct-06.webp", import.meta.url).href,
     badgeType: null,
     rating: "۳.۳",
     statusType: "seller-3h",
@@ -156,7 +156,7 @@ export const searchProducts = [
   {
     id: 7,
     title: "گوشی موبایل سامسونگ مدل Galaxy S25 Ultra دو سیم کارت ظرفیت 512 گیگابایت و رم 12 گیگابایت - پک ویتنام",
-    image: new URL("../assets/images/searchproduct-07.webp", import.meta.url).href,
+    image: new URL("@/assets/images/searchproduct-07.webp", import.meta.url).href,
     badgeType: "special",
     rating: "۴.۶",
     statusType: "last-one",
@@ -169,7 +169,7 @@ export const searchProducts = [
   {
     id: 8,
     title: "گوشی موبایل سامسونگ مدل Galaxy A36 دو سیم کارت ظرفیت 256 گیگابایت و رم 8 گیگابایت - ویتنام",
-    image: new URL("../assets/images/searchproduct-08.webp", import.meta.url).href,
+    image: new URL("@/assets/images/searchproduct-08.webp", import.meta.url).href,
     badgeType: null,
     rating: "۴.۵",
     statusType: "digikala-fast",
@@ -182,7 +182,7 @@ export const searchProducts = [
   {
     id: 9,
     title: "گوشی موبایل ریلمی مدل C71 دو سیم کارت ظرفیت 256 گیگابایت و رم 8 گیگابایت",
-    image: new URL("../assets/images/searchproduct-09.webp", import.meta.url).href,
+    image: new URL("@/assets/images/searchproduct-09.webp", import.meta.url).href,
     badgeType: "amazing",
     rating: "۴.۳",
     statusType: "seller-3h",
@@ -195,7 +195,7 @@ export const searchProducts = [
   {
     id: 10,
     title: "گوشی موبایل سامسونگ مدل Galaxy S26 Ultra دو سیم‌کارت ظرفیت 256 گیگابایت و رم 12 گیگابایت - ویتنام",
-    image: new URL("../assets/images/searchproduct-01.webp", import.meta.url).href,
+    image: new URL("@/assets/images/searchproduct-01.webp", import.meta.url).href,
     badgeType: "amazing",
     rating: "۴.۵",
     statusType: "digikala-fast",
@@ -208,7 +208,7 @@ export const searchProducts = [
   {
     id: 11,
     title: "گوشی موبایل وکال مدل V2 Pro 5G دو سیم‌کارت ظرفیت 128 گیگابایت و رم 4 گیگابایت  ",
-    image: new URL("../assets/images/searchproduct-02.webp", import.meta.url).href,
+    image: new URL("@/assets/images/searchproduct-02.webp", import.meta.url).href,
     badgeType: null,
     rating: "۳.۴",
     statusType: "last-one",
@@ -221,7 +221,7 @@ export const searchProducts = [
   {
     id: 12,
     title: "گوشی موبایل شیائومی مدل Redmi 15 4G دو سیم کارت ظرفیت 256 گیگابایت و رم 8 گیگابایت ",
-    image: new URL("../assets/images/searchproduct-03.webp", import.meta.url).href,
+    image: new URL("@/assets/images/searchproduct-03.webp", import.meta.url).href,
     badgeType: "special",
     rating: "۴.۴",
     statusType: "seller-3h",
@@ -234,7 +234,7 @@ export const searchProducts = [
   {
     id: 13,
     title: "گوشی موبایل ریلمی مدل Plus 12 ظرفیت 512 گیگابایت و رم 12 گیگابایت",
-    image: new URL("../assets/images/searchproduct-04.webp", import.meta.url).href,
+    image: new URL("@/assets/images/searchproduct-04.webp", import.meta.url).href,
     badgeType: "amazing",
     rating: "۴.۵",
     statusType: "last-one",
@@ -247,7 +247,7 @@ export const searchProducts = [
   {
     id: 14,
     title: "گوشی موبایل شیائومی مدل Redmi Note 14s دو سیم کارت ظرفیت 512 گیگابایت و رم 12 گیگابایت",
-    image: new URL("../assets/images/searchproduct-05.webp", import.meta.url).href,
+    image: new URL("@/assets/images/searchproduct-05.webp", import.meta.url).href,
     badgeType: "special",
     rating: "۴.۴",
     statusType: "digikala-fast",
@@ -260,7 +260,7 @@ export const searchProducts = [
   {
     id: 15,
     title: "گوشی موبایل هانوفر مدل V5 Pro دو سیم کارت ظرفیت 32 مگابایت و رم 32 مگابایت",
-    image: new URL("../assets/images/searchproduct-06.webp", import.meta.url).href,
+    image: new URL("@/assets/images/searchproduct-06.webp", import.meta.url).href,
     badgeType: null,
     rating: "۳.۳",
     statusType: "seller-3h",
@@ -273,7 +273,7 @@ export const searchProducts = [
   {
     id: 16,
     title: "گوشی موبایل سامسونگ مدل Galaxy S25 Ultra دو سیم کارت ظرفیت 512 گیگابایت و رم 12 گیگابایت - پک ویتنام",
-    image: new URL("../assets/images/searchproduct-07.webp", import.meta.url).href,
+    image: new URL("@/assets/images/searchproduct-07.webp", import.meta.url).href,
     badgeType: "special",
     rating: "۴.۶",
     statusType: "last-one",
@@ -286,7 +286,7 @@ export const searchProducts = [
   {
     id: 17,
     title: "گوشی موبایل سامسونگ مدل Galaxy A36 دو سیم کارت ظرفیت 256 گیگابایت و رم 8 گیگابایت - ویتنام",
-    image: new URL("../assets/images/searchproduct-08.webp", import.meta.url).href,
+    image: new URL("@/assets/images/searchproduct-08.webp", import.meta.url).href,
     badgeType: null,
     rating: "۴.۵",
     statusType: "digikala-fast",
@@ -299,7 +299,7 @@ export const searchProducts = [
   {
     id: 18,
     title: "گوشی موبایل ریلمی مدل C71 دو سیم کارت ظرفیت 256 گیگابایت و رم 8 گیگابایت",
-    image: new URL("../assets/images/searchproduct-09.webp", import.meta.url).href,
+    image: new URL("@/assets/images/searchproduct-09.webp", import.meta.url).href,
     badgeType: "amazing",
     rating: "۴.۳",
     statusType: "seller-3h",
@@ -312,7 +312,7 @@ export const searchProducts = [
   {
     id: 19,
     title: "گوشی موبایل سامسونگ مدل Galaxy S26 Ultra دو سیم‌کارت ظرفیت 256 گیگابایت و رم 12 گیگابایت - ویتنام",
-    image: new URL("../assets/images/searchproduct-01.webp", import.meta.url).href,
+    image: new URL("@/assets/images/searchproduct-01.webp", import.meta.url).href,
     badgeType: "amazing",
     rating: "۴.۵",
     statusType: "digikala-fast",
@@ -325,7 +325,7 @@ export const searchProducts = [
   {
     id: 20,
     title: "گوشی موبایل وکال مدل V2 Pro 5G دو سیم‌کارت ظرفیت 128 گیگابایت و رم 4 گیگابایت  ",
-    image: new URL("../assets/images/searchproduct-02.webp", import.meta.url).href,
+    image: new URL("@/assets/images/searchproduct-02.webp", import.meta.url).href,
     badgeType: null,
     rating: "۳.۴",
     statusType: "last-one",
@@ -338,7 +338,7 @@ export const searchProducts = [
   {
     id: 21,
     title: "گوشی موبایل شیائومی مدل Redmi 15 4G دو سیم کارت ظرفیت 256 گیگابایت و رم 8 گیگابایت ",
-    image: new URL("../assets/images/searchproduct-03.webp", import.meta.url).href,
+    image: new URL("@/assets/images/searchproduct-03.webp", import.meta.url).href,
     badgeType: "special",
     rating: "۴.۴",
     statusType: "seller-3h",
@@ -351,7 +351,7 @@ export const searchProducts = [
   {
     id: 22,
     title: "گوشی موبایل ریلمی مدل Plus 12 ظرفیت 512 گیگابایت و رم 12 گیگابایت",
-    image: new URL("../assets/images/searchproduct-04.webp", import.meta.url).href,
+    image: new URL("@/assets/images/searchproduct-04.webp", import.meta.url).href,
     badgeType: "amazing",
     rating: "۴.۵",
     statusType: "last-one",
@@ -364,7 +364,7 @@ export const searchProducts = [
   {
     id: 23,
     title: "گوشی موبایل شیائومی مدل Redmi Note 14s دو سیم کارت ظرفیت 512 گیگابایت و رم 12 گیگابایت",
-    image: new URL("../assets/images/searchproduct-05.webp", import.meta.url).href,
+    image: new URL("@/assets/images/searchproduct-05.webp", import.meta.url).href,
     badgeType: "special",
     rating: "۴.۴",
     statusType: "digikala-fast",
@@ -377,7 +377,7 @@ export const searchProducts = [
   {
     id: 24,
     title: "گوشی موبایل هانوفر مدل V5 Pro دو سیم کارت ظرفیت 32 مگابایت و رم 32 مگابایت",
-    image: new URL("../assets/images/searchproduct-06.webp", import.meta.url).href,
+    image: new URL("@/assets/images/searchproduct-06.webp", import.meta.url).href,
     badgeType: null,
     rating: "۳.۳",
     statusType: "seller-3h",
@@ -390,7 +390,7 @@ export const searchProducts = [
   {
     id: 25,
     title: "گوشی موبایل سامسونگ مدل Galaxy S25 Ultra دو سیم کارت ظرفیت 512 گیگابایت و رم 12 گیگابایت - پک ویتنام",
-    image: new URL("../assets/images/searchproduct-07.webp", import.meta.url).href,
+    image: new URL("@/assets/images/searchproduct-07.webp", import.meta.url).href,
     badgeType: "special",
     rating: "۴.۶",
     statusType: "last-one",
@@ -403,7 +403,7 @@ export const searchProducts = [
   {
     id: 26,
     title: "گوشی موبایل سامسونگ مدل Galaxy A36 دو سیم کارت ظرفیت 256 گیگابایت و رم 8 گیگابایت - ویتنام",
-    image: new URL("../assets/images/searchproduct-08.webp", import.meta.url).href,
+    image: new URL("@/assets/images/searchproduct-08.webp", import.meta.url).href,
     badgeType: null,
     rating: "۴.۵",
     statusType: "digikala-fast",
@@ -416,7 +416,7 @@ export const searchProducts = [
   {
     id: 27,
     title: "گوشی موبایل ریلمی مدل C71 دو سیم کارت ظرفیت 256 گیگابایت و رم 8 گیگابایت",
-    image: new URL("../assets/images/searchproduct-09.webp", import.meta.url).href,
+    image: new URL("@/assets/images/searchproduct-09.webp", import.meta.url).href,
     badgeType: "amazing",
     rating: "۴.۳",
     statusType: "seller-3h",
@@ -429,7 +429,7 @@ export const searchProducts = [
   {
     id: 28,
     title: "گوشی موبایل سامسونگ مدل Galaxy S26 Ultra دو سیم‌کارت ظرفیت 256 گیگابایت و رم 12 گیگابایت - ویتنام",
-    image: new URL("../assets/images/searchproduct-01.webp", import.meta.url).href,
+    image: new URL("@/assets/images/searchproduct-01.webp", import.meta.url).href,
     badgeType: "amazing",
     rating: "۴.۵",
     statusType: "digikala-fast",
@@ -442,7 +442,7 @@ export const searchProducts = [
   {
     id: 29,
     title: "گوشی موبایل وکال مدل V2 Pro 5G دو سیم‌کارت ظرفیت 128 گیگابایت و رم 4 گیگابایت  ",
-    image: new URL("../assets/images/searchproduct-02.webp", import.meta.url).href,
+    image: new URL("@/assets/images/searchproduct-02.webp", import.meta.url).href,
     badgeType: null,
     rating: "۳.۴",
     statusType: "last-one",
@@ -455,7 +455,7 @@ export const searchProducts = [
   {
     id: 30,
     title: "گوشی موبایل شیائومی مدل Redmi 15 4G دو سیم کارت ظرفیت 256 گیگابایت و رم 8 گیگابایت ",
-    image: new URL("../assets/images/searchproduct-03.webp", import.meta.url).href,
+    image: new URL("@/assets/images/searchproduct-03.webp", import.meta.url).href,
     badgeType: "special",
     rating: "۴.۴",
     statusType: "seller-3h",
@@ -468,7 +468,7 @@ export const searchProducts = [
   {
     id: 31,
     title: "گوشی موبایل ریلمی مدل Plus 12 ظرفیت 512 گیگابایت و رم 12 گیگابایت",
-    image: new URL("../assets/images/searchproduct-04.webp", import.meta.url).href,
+    image: new URL("@/assets/images/searchproduct-04.webp", import.meta.url).href,
     badgeType: "amazing",
     rating: "۴.۵",
     statusType: "last-one",
@@ -481,7 +481,7 @@ export const searchProducts = [
   {
     id: 32,
     title: "گوشی موبایل شیائومی مدل Redmi Note 14s دو سیم کارت ظرفیت 512 گیگابایت و رم 12 گیگابایت",
-    image: new URL("../assets/images/searchproduct-05.webp", import.meta.url).href,
+    image: new URL("@/assets/images/searchproduct-05.webp", import.meta.url).href,
     badgeType: "special",
     rating: "۴.۴",
     statusType: "digikala-fast",
@@ -494,7 +494,7 @@ export const searchProducts = [
   {
     id: 33,
     title: "گوشی موبایل هانوفر مدل V5 Pro دو سیم کارت ظرفیت 32 مگابایت و رم 32 مگابایت",
-    image: new URL("../assets/images/searchproduct-06.webp", import.meta.url).href,
+    image: new URL("@/assets/images/searchproduct-06.webp", import.meta.url).href,
     badgeType: null,
     rating: "۳.۳",
     statusType: "seller-3h",
@@ -507,7 +507,7 @@ export const searchProducts = [
   {
     id: 34,
     title: "گوشی موبایل سامسونگ مدل Galaxy S25 Ultra دو سیم کارت ظرفیت 512 گیگابایت و رم 12 گیگابایت - پک ویتنام",
-    image: new URL("../assets/images/searchproduct-07.webp", import.meta.url).href,
+    image: new URL("@/assets/images/searchproduct-07.webp", import.meta.url).href,
     badgeType: "special",
     rating: "۴.۶",
     statusType: "last-one",
@@ -520,7 +520,7 @@ export const searchProducts = [
   {
     id: 35,
     title: "گوشی موبایل سامسونگ مدل Galaxy A36 دو سیم کارت ظرفیت 256 گیگابایت و رم 8 گیگابایت - ویتنام",
-    image: new URL("../assets/images/searchproduct-08.webp", import.meta.url).href,
+    image: new URL("@/assets/images/searchproduct-08.webp", import.meta.url).href,
     badgeType: null,
     rating: "۴.۵",
     statusType: "digikala-fast",
@@ -533,7 +533,7 @@ export const searchProducts = [
   {
     id: 36,
     title: "گوشی موبایل ریلمی مدل C71 دو سیم کارت ظرفیت 256 گیگابایت و رم 8 گیگابایت",
-    image: new URL("../assets/images/searchproduct-09.webp", import.meta.url).href,
+    image: new URL("@/assets/images/searchproduct-09.webp", import.meta.url).href,
     badgeType: "amazing",
     rating: "۴.۳",
     statusType: "seller-3h",
@@ -546,7 +546,7 @@ export const searchProducts = [
   {
     id: 37,
     title: "گوشی موبایل سامسونگ مدل Galaxy S26 Ultra دو سیم‌کارت ظرفیت 256 گیگابایت و رم 12 گیگابایت - ویتنام",
-    image: new URL("../assets/images/searchproduct-01.webp", import.meta.url).href,
+    image: new URL("@/assets/images/searchproduct-01.webp", import.meta.url).href,
     badgeType: "amazing",
     rating: "۴.۵",
     statusType: "digikala-fast",
@@ -559,7 +559,7 @@ export const searchProducts = [
   {
     id: 38,
     title: "گوشی موبایل وکال مدل V2 Pro 5G دو سیم‌کارت ظرفیت 128 گیگابایت و رم 4 گیگابایت  ",
-    image: new URL("../assets/images/searchproduct-02.webp", import.meta.url).href,
+    image: new URL("@/assets/images/searchproduct-02.webp", import.meta.url).href,
     badgeType: null,
     rating: "۳.۴",
     statusType: "last-one",
@@ -572,7 +572,7 @@ export const searchProducts = [
   {
     id: 39,
     title: "گوشی موبایل شیائومی مدل Redmi 15 4G دو سیم کارت ظرفیت 256 گیگابایت و رم 8 گیگابایت ",
-    image: new URL("../assets/images/searchproduct-03.webp", import.meta.url).href,
+    image: new URL("@/assets/images/searchproduct-03.webp", import.meta.url).href,
     badgeType: "special",
     rating: "۴.۴",
     statusType: "seller-3h",
@@ -585,7 +585,7 @@ export const searchProducts = [
   {
     id: 40,
     title: "گوشی موبایل ریلمی مدل Plus 12 ظرفیت 512 گیگابایت و رم 12 گیگابایت",
-    image: new URL("../assets/images/searchproduct-04.webp", import.meta.url).href,
+    image: new URL("@/assets/images/searchproduct-04.webp", import.meta.url).href,
     badgeType: "amazing",
     rating: "۴.۵",
     statusType: "last-one",
@@ -598,7 +598,7 @@ export const searchProducts = [
   {
     id: 41,
     title: "گوشی موبایل شیائومی مدل Redmi Note 14s دو سیم کارت ظرفیت 512 گیگابایت و رم 12 گیگابایت",
-    image: new URL("../assets/images/searchproduct-05.webp", import.meta.url).href,
+    image: new URL("@/assets/images/searchproduct-05.webp", import.meta.url).href,
     badgeType: "special",
     rating: "۴.۴",
     statusType: "digikala-fast",
@@ -611,7 +611,7 @@ export const searchProducts = [
   {
     id: 42,
     title: "گوشی موبایل هانوفر مدل V5 Pro دو سیم کارت ظرفیت 32 مگابایت و رم 32 مگابایت",
-    image: new URL("../assets/images/searchproduct-06.webp", import.meta.url).href,
+    image: new URL("@/assets/images/searchproduct-06.webp", import.meta.url).href,
     badgeType: null,
     rating: "۳.۳",
     statusType: "seller-3h",
@@ -624,7 +624,7 @@ export const searchProducts = [
   {
     id: 43,
     title: "گوشی موبایل سامسونگ مدل Galaxy S25 Ultra دو سیم کارت ظرفیت 512 گیگابایت و رم 12 گیگابایت - پک ویتنام",
-    image: new URL("../assets/images/searchproduct-07.webp", import.meta.url).href,
+    image: new URL("@/assets/images/searchproduct-07.webp", import.meta.url).href,
     badgeType: "special",
     rating: "۴.۶",
     statusType: "last-one",
@@ -637,7 +637,7 @@ export const searchProducts = [
   {
     id: 44,
     title: "گوشی موبایل سامسونگ مدل Galaxy A36 دو سیم کارت ظرفیت 256 گیگابایت و رم 8 گیگابایت - ویتنام",
-    image: new URL("../assets/images/searchproduct-08.webp", import.meta.url).href,
+    image: new URL("@/assets/images/searchproduct-08.webp", import.meta.url).href,
     badgeType: null,
     rating: "۴.۵",
     statusType: "digikala-fast",
@@ -650,7 +650,7 @@ export const searchProducts = [
   {
     id: 45,
     title: "گوشی موبایل ریلمی مدل C71 دو سیم کارت ظرفیت 256 گیگابایت و رم 8 گیگابایت",
-    image: new URL("../assets/images/searchproduct-09.webp", import.meta.url).href,
+    image: new URL("@/assets/images/searchproduct-09.webp", import.meta.url).href,
     badgeType: "amazing",
     rating: "۴.۳",
     statusType: "seller-3h",

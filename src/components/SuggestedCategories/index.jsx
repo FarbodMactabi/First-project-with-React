@@ -1,4 +1,4 @@
-import "../../styles/SuggestedCategories.css"
+import "@/styles/SuggestedCategories.css"
 import {Link} from "react-router-dom"
 
 function SuggestedCategories({suggestion}) {

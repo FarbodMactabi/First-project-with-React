@@ -1,4 +1,4 @@
-import "../../styles/FloatingButtons.css"
+import "@/styles/FloatingButtons.css"
 import { BsBasket2 , BsHeadset } from "react-icons/bs"
 
 function FloatingButtons() {

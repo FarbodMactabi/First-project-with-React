@@ -1,4 +1,4 @@
-import "../../styles/ProductBuyBox.css"
+import "@/styles/ProductBuyBox.css"
 import {
   FiChevronLeft,
   FiInfo,
@@ -10,7 +10,7 @@ import {
 } from "react-icons/md"
 import { PiStarFour } from "react-icons/pi"
 
-import { productBuyBoxData, productBuyBoxFooterData, productBuyBoxPlusData, productBuyBoxSellerInfoItems, productBuyBoxShippingItems } from "../../data"
+import { productBuyBoxData, productBuyBoxFooterData, productBuyBoxPlusData, productBuyBoxSellerInfoItems, productBuyBoxShippingItems } from "@/data"
 
 function ProductBuyBox() {
   const shippingIconMap = {

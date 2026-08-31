@@ -1,10 +1,10 @@
-import "../../styles/ProductSimilarProducts.css"
+import "@/styles/ProductSimilarProducts.css"
 import { Swiper, SwiperSlide } from "swiper/react"
 import { Navigation } from "swiper/modules"
 import "swiper/css"
 import "swiper/css/navigation"
 import { FiTruck } from "react-icons/fi"
-import { productSimilarProductsData, productSimilarSectionData } from "../../data"
+import { productSimilarProductsData, productSimilarSectionData } from "@/data"
 
 function ProductSimilarProducts() {
   return (

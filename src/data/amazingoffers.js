@@ -2,7 +2,7 @@ export const amazingProducts = [
   {
     id: 1,
     title: "هارد اکسترنال ای دیتا مدل HD710 Pro ظرفیت 2 ترابایت با استاندارد ارتباطی USB 3.2 Gen1",
-    image: new URL("../assets/images/amazingoffers-01.webp", import.meta.url).href,
+    image: new URL("@/assets/images/amazingoffers-01.webp", import.meta.url).href,
     price: "۳۳,۳۹۷,۱۰۰",
     discountPrice: "۲۱,۵۰۰,۰۰۰",
     discount: "۳۶",
@@ -10,7 +10,7 @@ export const amazingProducts = [
   {
     id: 2,
     title: "هدفون بلوتوثی انکر مدل SoundCore R50i A3949 بدون قابلیت نویز کنسلینگ، درگاه شارژ USB Type-C، دارای فناوری AI-Enhanced Calls برای کاهش نویز و بهبود مکالمات، مقاوم در برابر رطوبت و عرق",
-    image: new URL("../assets/images/amazingoffers-02.webp", import.meta.url).href,
+    image: new URL("@/assets/images/amazingoffers-02.webp", import.meta.url).href,
     price: "۲,۸۰۰,۰۰۰",
     discountPrice: "۱,۸۵۹,۰۰۰",
     discount: "۳۴",
@@ -18,7 +18,7 @@ export const amazingProducts = [
   {
     id: 3,
     title: "دستگاه جوش 200 آمپر رونیکس مدل RH-4604",
-    image: new URL("../assets/images/amazingoffers-03.webp", import.meta.url).href,
+    image: new URL("@/assets/images/amazingoffers-03.webp", import.meta.url).href,
     price: "۱۴,۳۱۱,۸۰۰",
     discountPrice: "۱۲,۵۰۰,۰۰۰",
     discount: "۱۳",
@@ -26,7 +26,7 @@ export const amazingProducts = [
   {
     id: 4,
     title: "اندروید باکس هوما مدل 3L",
-    image: new URL("../assets/images/amazingoffers-04.webp", import.meta.url).href,
+    image: new URL("@/assets/images/amazingoffers-04.webp", import.meta.url).href,
     price: "۳,۶۷۳,۵۰۰",
     discountPrice: "۲,۹۵۰,۰۰۰",
     discount: "۲۰",
@@ -34,7 +34,7 @@ export const amazingProducts = [
   {
     id: 5,
     title: "مجموعه 33 عددی دریل برقی رونیکس مدل rs-0008",
-    image: new URL("../assets/images/amazingoffers-05.webp", import.meta.url).href,
+    image: new URL("@/assets/images/amazingoffers-05.webp", import.meta.url).href,
     price: "۷,۳۳۲,۶۰۰",
     discountPrice: "۶,۳۸۵,۰۰۰",
     discount: "۱۳",
@@ -42,7 +42,7 @@ export const amazingProducts = [
   {
     id: 6,
     title: "اسپرسوساز نوا مدل 183، مناسب تهیه اسپرسو، کاپوچینو، کافه لاته و موکا، دارای 1 عدد نازل قهوه، سیستم گرم کردن فنجان، سینی چکه گیر، حالت آماده به کار",
-    image: new URL("../assets/images/amazingoffers-06.webp", import.meta.url).href,
+    image: new URL("@/assets/images/amazingoffers-06.webp", import.meta.url).href,
     price: "۱۵,۰۰۰,۰۰۰",
     discountPrice: "۱۲,۷۵۰,۰۰۰",
     discount: "۱۵",
@@ -50,7 +50,7 @@ export const amazingProducts = [
   {
     id: 7,
     title: "کابل تبدیل USB-C به USB-C انکر مدل Nylon A8753 طول 1.8 متر",
-    image: new URL("../assets/images/amazingoffers-07.webp", import.meta.url).href,
+    image: new URL("@/assets/images/amazingoffers-07.webp", import.meta.url).href,
     price: "۱,۶۸۴,۷۰۰",
     discountPrice: "۶۹۹,۰۰۰",
     discount: "۵۹",
@@ -58,7 +58,7 @@ export const amazingProducts = [
   {
     id: 8,
     title: "ساشه منیزیم مگا مگ - 400 فرش مورنینگ بسته 30 عددی",
-    image: new URL("../assets/images/amazingoffers-08.webp", import.meta.url).href,
+    image: new URL("@/assets/images/amazingoffers-08.webp", import.meta.url).href,
     price: "۷۷۰,۰۰۰",
     discountPrice: "۷۷,۰۰۰",
     discount: "۹۰",
@@ -66,7 +66,7 @@ export const amazingProducts = [
   {
     id: 9,
     title: "سرویس غذاخوری اوپال 26 پارچه 6 نفره دینو مدل  نیلوفری ورژن 113003",
-    image: new URL("../assets/images/amazingoffers-09.webp", import.meta.url).href,
+    image: new URL("@/assets/images/amazingoffers-09.webp", import.meta.url).href,
     price: "۵,۰۰۰,۰۰۰",
     discountPrice: "۳,۴۹۹,۰۰۰",
     discount: "۳۰",
@@ -74,7 +74,7 @@ export const amazingProducts = [
   {
     id: 10,
     title: "ماشین لباسشویی 10.5 کیلوگرم اتوماتیک ال جی مدل F4V5RGP0W دارای قابلیت خشک‌کن صددرصد ",
-    image: new URL("../assets/images/amazingoffers-10.webp", import.meta.url).href,
+    image: new URL("@/assets/images/amazingoffers-10.webp", import.meta.url).href,
     price: "۱۷۹,۶۸۵,۰۰۰",
     discountPrice: "۱۱۹,۰۰۰,۰۰۰",
     discount: "۳۴",
@@ -82,7 +82,7 @@ export const amazingProducts = [
   {
     id: 11,
     title: "ست ساعت مچی عقربه‌ای کوارتز و ست زیورآلات زنانه مدل 439-3 G",
-    image: new URL("../assets/images/amazingoffers-11.webp", import.meta.url).href,
+    image: new URL("@/assets/images/amazingoffers-11.webp", import.meta.url).href,
     price: "۸۴۷,۰۰۰",
     discountPrice: "۷۲۹,۰۰۰",
     discount: "۱۴",
@@ -90,7 +90,7 @@ export const amazingProducts = [
   {
     id: 12,
     title: "جاروبرقی 1000 وات عرشیا مدل 3367",
-    image: new URL("../assets/images/amazingoffers-12.webp", import.meta.url).href,
+    image: new URL("@/assets/images/amazingoffers-12.webp", import.meta.url).href,
     price: "۸,۹۰۰,۰۰۰",
     discountPrice: "۸,۲۹۹,۰۰۰",
     discount: "۷",

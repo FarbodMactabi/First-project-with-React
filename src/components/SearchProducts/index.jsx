@@ -1,7 +1,7 @@
-import "../../styles/SearchProducts.css"
+import "@/styles/SearchProducts.css"
 import { AiFillStar } from "react-icons/ai"
 import { FiChevronLeft, FiChevronRight, FiSliders } from "react-icons/fi"
-import { badgeMap, decorativePaginationItems, productStatusMap, searchProducts, sortItems } from "../../data"
+import { badgeMap, decorativePaginationItems, productStatusMap, searchProducts, sortItems } from "@/data"
 
 function SearchProducts() {
   const visibleProducts = searchProducts.slice(0, 15)

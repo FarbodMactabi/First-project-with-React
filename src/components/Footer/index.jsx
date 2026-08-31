@@ -1,15 +1,15 @@
 import { useState } from "react"
-import "../../styles/Footer.css"
+import "@/styles/Footer.css"
 
-import { contactItems, services, linkColumns, socials, appDownloads, trustBadges, bottomBrands } from "../../data"
+import { contactItems, services, linkColumns, socials, appDownloads, trustBadges, bottomBrands } from "@/data"
 
 function Footer() {
 
   const [showMoreText, setShowMoreText] = useState(false)
 
-  const digikalaLogo = new URL("../../assets/images/full-horizontal.svg",import.meta.url).href
+  const digikalaLogo = new URL("@/assets/images/full-horizontal.svg",import.meta.url).href
 
-  const appIcon = new URL("../../assets/images/footerlogo2.webp",import.meta.url).href
+  const appIcon = new URL("@/assets/images/footerlogo2.webp",import.meta.url).href
 
   const goTop = () => {
     window.scrollTo({

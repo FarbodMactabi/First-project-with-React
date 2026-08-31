@@ -1,4 +1,4 @@
-import "../../styles/ProductBreadcrumb.css"
+import "@/styles/ProductBreadcrumb.css"
 import { PiStorefront } from "react-icons/pi"
 
 function ProductBreadcrumb() {

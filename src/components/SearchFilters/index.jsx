@@ -1,7 +1,7 @@
 import { useState } from "react"
-import "../../styles/SearchFilters.css"
+import "@/styles/SearchFilters.css"
 import { FiChevronDown, FiChevronUp, FiSearch, FiCheck, FiX } from "react-icons/fi"
-import { searchFilters } from "../../data"
+import { searchFilters } from "@/data"
 
 function SearchFilters() {
 

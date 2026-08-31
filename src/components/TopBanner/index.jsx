@@ -1,5 +1,5 @@
-import "../../styles/TopBanner.css"
-import bannerImage from "../../assets/images/banner.gif"
+import "@/styles/TopBanner.css"
+import bannerImage from "@/assets/images/banner.gif"
 
 function TopBanner() {
   return (

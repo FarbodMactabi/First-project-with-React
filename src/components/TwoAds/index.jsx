@@ -1,4 +1,4 @@
-import "../../styles/TwoAds.css"
+import "@/styles/TwoAds.css"
 
 
 

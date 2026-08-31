@@ -1,5 +1,5 @@
-import "../../styles/DiscountedProducts.css"
-import { discountedProducts } from "../../data"
+import "@/styles/DiscountedProducts.css"
+import { discountedProducts } from "@/data"
 
 function DiscountedProducts() {
   return (

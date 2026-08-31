@@ -1,16 +1,16 @@
-import Story from "../components/Story"
-import Slider from "../components/Slider"
-import ShortcutMenu from "../components/ShortcutMenu"
-import AmazingOffers from "../components/AmazingOffers"
-import FourAds from "../components/FourAds"
-import SupermarketAmazing from "../components/SupermarketAmazing"
-import ShopByCategory from "../components/ShopByCategory"
-import TwoAds from "../components/TwoAds"
-import PopularBrands from "../components/PopularBrands"
-import SuggestedCategories from "../components/SuggestedCategories"
-import BestSellingProducts from "../components/BestSellingProducts"
-import DiscountedProducts from "../components/DiscountedProducts"
-import ReadablePosts from "../components/ReadablePosts"
+import Story from "@/components/Story"
+import Slider from "@/components/Slider"
+import ShortcutMenu from "@/components/ShortcutMenu"
+import AmazingOffers from "@/components/AmazingOffers"
+import FourAds from "@/components/FourAds"
+import SupermarketAmazing from "@/components/SupermarketAmazing"
+import ShopByCategory from "@/components/ShopByCategory"
+import TwoAds from "@/components/TwoAds"
+import PopularBrands from "@/components/PopularBrands"
+import SuggestedCategories from "@/components/SuggestedCategories"
+import BestSellingProducts from "@/components/BestSellingProducts"
+import DiscountedProducts from "@/components/DiscountedProducts"
+import ReadablePosts from "@/components/ReadablePosts"
 
 import 
         { 
@@ -23,7 +23,7 @@ import
          suggestedCategories01, 
          suggestedCategories02 
         } 
-        from "../data"
+        from "@/data"
 
 
 

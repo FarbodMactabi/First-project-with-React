@@ -1,4 +1,4 @@
-import "../../styles/ProductGallery.css"
+import "@/styles/ProductGallery.css"
 import {
   FiBarChart2,
   FiBell,
@@ -9,7 +9,7 @@ import {
   FiInfo,
 } from "react-icons/fi"
 
-import { productGalleryActions, productGalleryImages, productGalleryMoreThumbnail } from "../../data"
+import { productGalleryActions, productGalleryImages, productGalleryMoreThumbnail } from "@/data"
 
 function ProductGallery() {
   const galleryIconMap = {

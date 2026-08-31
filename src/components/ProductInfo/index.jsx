@@ -1,10 +1,10 @@
-import "../../styles/ProductInfo.css"
+import "@/styles/ProductInfo.css"
 import { AiFillStar } from "react-icons/ai"
 import { HiSparkles } from "react-icons/hi2"
 import { PiStarFour } from "react-icons/pi"
 import { TbLetterP } from "react-icons/tb"
 import { FiChevronLeft, FiInfo, FiCheck } from "react-icons/fi"
-import { deliveryBoxData, insuranceData, installmentBoxData, plusBoxData, productColors, productFeaturesData, productInfoData, productInfoMetaItems, returnPolicyData } from "../../data"
+import { deliveryBoxData, insuranceData, installmentBoxData, plusBoxData, productColors, productFeaturesData, productInfoData, productInfoMetaItems, returnPolicyData } from "@/data"
 
 function ProductInfo() {
   const activeColor = productColors[0]
