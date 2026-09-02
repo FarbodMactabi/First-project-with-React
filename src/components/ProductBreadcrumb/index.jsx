@@ -1,21 +1,8 @@
 import "@/styles/ProductBreadcrumb.css"
+import { breadcrumbItems } from "@/data"
 import { PiStorefront } from "react-icons/pi"
 
 function ProductBreadcrumb() {
-  const breadcrumbItems = [
-    {
-      id: 1,
-      title: "دیجی‌کالا",
-    },
-    {
-      id: 2,
-      title: "موبایل",
-    },
-    {
-      id: 3,
-      title: "گوشی موبایل",
-    },
-  ]
 
   return (
     <nav className="product-breadcrumb">

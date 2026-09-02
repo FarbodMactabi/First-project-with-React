@@ -1,4 +1,3 @@
-export { amazingProducts } from "./amazingoffers";
 export { categories } from "./categories";
 export { discountedProducts } from "./discountedProducts";
 export { slides } from "./slider";
@@ -7,6 +6,23 @@ export { popularBrands } from "./popularBrands";
 export { searchFilters } from "./searchFilters";
 export { shortcuts } from "./shortcuts";
 export { shopCategories } from "./shopCategories";
+export { breadcrumbItems } from "./productBreadcrumb"
+export { readablePosts } from "./readablePosts"
+
+export {
+        supermarketAssets,
+        supermarketProducts
+        } from "./supermarketAmazing"
+
+export {
+        sponsoredProducts,
+        sponsoredBrandLogo
+       } from "./searchSponsored"
+
+export { 
+        amazingProducts, 
+        amazingAssets 
+       } from "./amazingoffers";
 
 export { 
         suggestedCategories01, 
@@ -61,6 +77,7 @@ export {
         productInfoData,
         productInfoMetaItems,
         returnPolicyData,
+        productInfoSections,
         productDetailTabs,
         productQuestionsData,
         productReviewsData,

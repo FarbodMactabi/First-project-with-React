@@ -1,3 +1,8 @@
+export const amazingAssets = {
+  titleImage: new URL("@/assets/images/Amazings.svg",import.meta.url).href,
+  boxImage: new URL("@/assets/images/Amazing01.svg",import.meta.url).href,
+}
+
 export const amazingProducts = [
   {
     id: 1,

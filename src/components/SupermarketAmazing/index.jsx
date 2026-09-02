@@ -1,43 +1,7 @@
 import "@/styles/SupermarketAmazing.css"
+import { supermarketAssets, supermarketProducts } from "@/data"
 
 function SupermarketAmazing() {
-
-  const basketImage = new URL("@/assets/images/fresh.webp",import.meta.url).href
-  const titleImage = new URL("@/assets/images/fresh-incredible-offer.svg",import.meta.url).href
-
-  
-  const products = [
-    {
-      id: 1,
-      discount: "۵۰",
-      image: new URL("@/assets/images/SupermarketAmazing-01.webp", import.meta.url).href,
-    },
-    {
-      id: 2,
-      discount: "۴۰",
-      image: new URL("@/assets/images/SupermarketAmazing-02.webp", import.meta.url).href,
-    },
-    {
-      id: 3,
-      discount: "۴۰",
-      image: new URL("@/assets/images/SupermarketAmazing-03.webp", import.meta.url).href,
-    },
-    {
-      id: 4,
-      discount: "۴۰",
-      image: new URL("@/assets/images/SupermarketAmazing-04.webp", import.meta.url).href,
-    },
-    {
-      id: 5,
-      discount: "۴۰",
-      image: new URL("@/assets/images/SupermarketAmazing-05.webp", import.meta.url).href,
-    },
-    {
-      id: 6,
-      discount: "۴۰",
-      image: new URL("@/assets/images/SupermarketAmazing-06.webp", import.meta.url).href,
-    },
-  ]
 
   return (
     <section className="supermarket-section">
@@ -48,13 +12,13 @@ function SupermarketAmazing() {
 
           <img
             className="supermarket-basket-image"
-            src={basketImage}
+            src={supermarketAssets.basketImage}
             alt="سبد سوپرمارکتی"
           />
 
           <img
             className="supermarket-title-image"
-            src={titleImage}
+            src={supermarketAssets.titleImage}
             alt="شگفت انگیز سوپرمارکتی"
           />
 
@@ -68,7 +32,7 @@ function SupermarketAmazing() {
 
           <div className="supermarket-products">
 
-            {products.map((product) => (
+            {supermarketProducts.map((product) => (
               <div className="supermarket-product" key={product.id}>
 
                 <div className="supermarket-product-image">

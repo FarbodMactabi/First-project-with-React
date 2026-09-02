@@ -827,3 +827,16 @@ export const productQuestionsData = {
     },
   ],
 }
+
+export const productInfoSections = [
+  {
+    id: 1,
+    type: "insurance",
+    title: "بیمه",
+  },
+  {
+    id: 2,
+    type: "features",
+    title: "ویژگی‌ها",
+  },
+]

@@ -4,7 +4,7 @@ import { Navigation } from "swiper/modules"
 import "swiper/css"
 import "swiper/css/navigation"
 import "@/styles/AmazingOffers.css"
-import { amazingProducts } from "@/data"
+import { amazingProducts , amazingAssets } from "@/data"
 
 
 function AmazingOffers() {
@@ -50,7 +50,7 @@ function AmazingOffers() {
         <div className="amazing-title-box">
           <img
             className="amazing-title-image"
-            src={titleImage}
+            src={amazingAssets.titleImage}
             alt="پیشنهاد شگفت انگیز"
           />
 
@@ -64,7 +64,7 @@ function AmazingOffers() {
 
           <img
             className="amazing-box-image"
-            src={boxImage}
+            src={amazingAssets.boxImage}
             alt="شگفت انگیز"
           />
 

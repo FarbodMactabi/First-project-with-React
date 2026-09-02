@@ -4,7 +4,7 @@ import { HiSparkles } from "react-icons/hi2"
 import { PiStarFour } from "react-icons/pi"
 import { TbLetterP } from "react-icons/tb"
 import { FiChevronLeft, FiInfo, FiCheck } from "react-icons/fi"
-import { deliveryBoxData, insuranceData, installmentBoxData, plusBoxData, productColors, productFeaturesData, productInfoData, productInfoMetaItems, returnPolicyData } from "@/data"
+import { deliveryBoxData, insuranceData, installmentBoxData, plusBoxData, productColors, productFeaturesData, productInfoData, productInfoMetaItems, returnPolicyData, productInfoSections } from "@/data"
 
 function ProductInfo() {
   const activeColor = productColors[0]
@@ -13,19 +13,6 @@ function ProductInfo() {
     sparkles: <HiSparkles />,
     chevron: <FiChevronLeft />,
   }
-
-  const infoSections = [
-    {
-      id: 1,
-      type: "insurance",
-      title: "بیمه",
-    },
-    {
-      id: 2,
-      type: "features",
-      title: "ویژگی‌ها",
-    },
-  ]
 
   return (
     <section className="product-info">
@@ -121,7 +108,7 @@ function ProductInfo() {
         <span>{deliveryBoxData.text}</span>
       </div>
 
-      {infoSections.map((section) => {
+      {productInfoSections.map((section) => {
         if (section.type === "insurance") {
           return (
             <div className="product-info-section" key={section.id}>
