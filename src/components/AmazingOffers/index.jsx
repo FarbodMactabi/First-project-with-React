@@ -10,16 +10,6 @@ import { amazingProducts , amazingAssets } from "@/data"
 function AmazingOffers() {
   const [timeLeft, setTimeLeft] = useState(3 * 60 * 60)
 
-  const titleImage = new URL(
-    "@/assets/images/Amazings.svg",
-    import.meta.url
-  ).href
-
-  const boxImage = new URL(
-    "@/assets/images/Amazing01.svg",
-    import.meta.url
-  ).href
-
   useEffect(() => {
     const timer = setInterval(() => {
       setTimeLeft((previousTime) => {

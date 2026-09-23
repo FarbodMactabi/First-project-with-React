@@ -48,7 +48,8 @@ export {
         socials, 
         appDownloads, 
         trustBadges, 
-        bottomBrands 
+        bottomBrands,
+        footerImages 
        } from "./footer";
 
 export { 

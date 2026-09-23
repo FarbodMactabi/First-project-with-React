@@ -1,17 +1,10 @@
 import "@/styles/Header.css"
 import { Link } from "react-router-dom"
-import { categories } from "@/data"
+import { categories, recentSearches, popularSearches } from "@/data"
 import logoImage from "@/assets/images/full-horizontal.svg"
 import { GiGoldBar } from "react-icons/gi"
 import { BsBasket3, BsFire } from "react-icons/bs"
-import {
-  FiSearch,
-  FiLogIn,
-  FiShoppingCart,
-  FiBell,
-  FiZap,
-  FiX,
-} from "react-icons/fi"
+import { FiSearch, FiLogIn, FiShoppingCart, FiBell, FiZap, FiX } from "react-icons/fi"
 import { HiBars3, HiOutlineMapPin } from "react-icons/hi2"
 import { useEffect, useState } from "react"
 
@@ -23,19 +16,7 @@ function Header() {
   const [activeCategoryId, setActiveCategoryId] = useState(categories[0].id)
   const [isHeaderBottomHidden, setIsHeaderBottomHidden] = useState(false)
 
-  const activeCategory =
-    categories.find((category) => category.id === activeCategoryId) || categories[0]
-
-  const recentSearches = ["موبایل"]
-
-  const popularSearches = [
-    "آیفون ۱۶",
-    "Ps5",
-    "اپل واچ",
-    "پنکه شارژی",
-    "ایرپاد",
-    "لپ تاپ",
-  ]
+  const activeCategory = categories.find((category) => category.id === activeCategoryId) || categories[0]
 
   useEffect(() => {
     let lastScrollY = window.scrollY

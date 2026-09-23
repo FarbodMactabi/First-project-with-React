@@ -2824,3 +2824,14 @@ export const categories = [
     ]
     }
     ]
+
+export const recentSearches = ["موبایل"]
+
+export const popularSearches = [
+                                "آیفون ۱۶",
+                                "Ps5",
+                                "اپل واچ",
+                                "پنکه شارژی",
+                                "ایرپاد",
+                                "لپ تاپ",
+                               ]

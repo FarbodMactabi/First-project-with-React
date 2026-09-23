@@ -1,7 +1,5 @@
 import "@/styles/TwoAds.css"
 
-
-
 function TwoAds({ ads }) {
 
   return (
@@ -20,5 +18,4 @@ function TwoAds({ ads }) {
     </section>
   )
 }
-
 export default TwoAds

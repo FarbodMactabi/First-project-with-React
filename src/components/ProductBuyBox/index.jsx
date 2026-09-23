@@ -1,18 +1,11 @@
 import "@/styles/ProductBuyBox.css"
-import {
-  FiChevronLeft,
-  FiInfo,
-  FiShield,
-} from "react-icons/fi"
-import {
-  MdOutlineLocalShipping,
-  MdOutlineSpeed,
-} from "react-icons/md"
+import { FiChevronLeft, FiInfo, FiShield } from "react-icons/fi"
+import { MdOutlineLocalShipping, MdOutlineSpeed } from "react-icons/md"
 import { PiStarFour } from "react-icons/pi"
-
 import { productBuyBoxData, productBuyBoxFooterData, productBuyBoxPlusData, productBuyBoxSellerInfoItems, productBuyBoxShippingItems } from "@/data"
 
 function ProductBuyBox() {
+  
   const shippingIconMap = {
     truck: <MdOutlineLocalShipping />,
     fast: <MdOutlineSpeed />,

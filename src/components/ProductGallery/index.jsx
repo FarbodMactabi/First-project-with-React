@@ -1,14 +1,5 @@
 import "@/styles/ProductGallery.css"
-import {
-  FiBarChart2,
-  FiBell,
-  FiHeart,
-  FiList,
-  FiShare2,
-  FiColumns,
-  FiInfo,
-} from "react-icons/fi"
-
+import { FiBarChart2, FiBell, FiHeart, FiList, FiShare2, FiColumns, FiInfo } from "react-icons/fi"
 import { productGalleryActions, productGalleryImages, productGalleryMoreThumbnail } from "@/data"
 
 function ProductGallery() {

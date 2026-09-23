@@ -206,3 +206,8 @@ export const bottomBrands = [
     image: new URL("@/assets/images/footerbrand-18.svg", import.meta.url).href,
   },
 ]
+
+export const footerImages = {
+  logo: new URL("@/assets/images/full-horizontal.svg", import.meta.url).href,
+  appIcon: new URL("@/assets/images/footerlogo2.webp", import.meta.url).href,
+}
