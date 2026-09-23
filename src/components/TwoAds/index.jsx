@@ -18,4 +18,5 @@ function TwoAds({ ads }) {
     </section>
   )
 }
+
 export default TwoAds
